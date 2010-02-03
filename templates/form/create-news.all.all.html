@@ -1,0 +1,3 @@
+<h2 change:h=""><tal:block change:translate="&modules.news.frontoffice.Create-new-in-topic" /> ${parent/getLabel}</h2>
+<tal:block tal:define="global cancel_confirm">return confirm('<tal:block change:translate="&modules.generic.frontoffice.Cancel-create;" />');</tal:block>
+<div change:include="module 'news'; template 'form/news'; type 'html'; submitAction 'insert'; edit_from_url edit_from_url; cancel_confirm cancel_confirm" />

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="Compact">
+    <locale lang="fr">Affichage compact</locale>
+    <locale lang="en">Compact view</locale>
+    <locale lang="de">Kompaktanzeige</locale>
+  </entity>
+  <entity id="Compact-help">
+    <locale lang="fr">Affichage compact</locale>
+    <locale lang="en">Compact view</locale>
+    <locale lang="de">Kompaktanzeige</locale>
+  </entity>
+  <entity id="linktoallnews">
+    <locale lang="fr">lien vers toutes les actualités</locale>
+    <locale lang="en">display link to all news</locale>
+    <locale lang="de">Link zu allen Aktualitäten</locale>
+  </entity>
+  <entity id="linktoallnews-help">
+    <locale lang="fr">afficher ou non le lien menant à la liste de toutes les actualités du site. Il s'agit de la page tagguée "Liste des actualités du site".</locale>
+    <locale lang="en">linktoallnews-help</locale>
+    <locale lang="de">den Link zur Liste aller Aktualitäten der Webseite anzeigen oder nicht. Es handelt sich um die getaggte Seite "Liste 
+		der Aktualitäten der Webseite".</locale>
+  </entity>
+  <entity id="linktonewsfromsametopic">
+    <locale lang="fr">lien vers les actualités de la rubrique</locale>
+    <locale lang="en">display link to news in the same topic</locale>
+    <locale lang="de">Link zu den Aktualitäten der Rubrik</locale>
+  </entity>
+  <entity id="linktonewsfromsametopic-help">
+    <locale lang="fr">afficher ou non le lien menant à la liste des de la rubrique. Il s'agit de la page tagguée "Liste des actualités de la rubrique".</locale>
+    <locale lang="en">linktonewsfromsametopic</locale>
+    <locale lang="de">den Link zur Liste der Rubrik anzeigen oder nicht. Es handelt sich um die getaggte Seite "Liste der Aktualitäten der 
+		Rubrik".</locale>
+  </entity>
+  <entity id="linksposition">
+    <locale lang="fr">position des liens</locale>
+    <locale lang="en">links position</locale>
+    <locale lang="de">Position der Links</locale>
+  </entity>
+  <entity id="linksposition-help">
+    <locale lang="fr">détermine où les liens "Voir toutes les actualités" et "Voir les actualités de la rubrique" sont affichés. Si aucun des liens n'est affiché, ce paramètres est sans importance.</locale>
+    <locale lang="en">linktonewsfromsametopic</locale>
+    <locale lang="de">Bestimmt den Ort der Links "Alle Aktualitäten anzeigen" und "Aktualitäten der Rubrik anzeigen". Ist keiner der Links 
+		angezeigt, ist diese Einstellung unwichtig.</locale>
+  </entity>
+  <entity id="metas.title">
+    <locale lang="fr">Titre de l'actualité courante</locale>
+  </entity>
+  <entity id="metas.resume">
+    <locale lang="fr">Résumé de l'actualité courante</locale>
+  </entity>
+  <entity id="metas.date">
+    <locale lang="fr">Date de l'actualité courante</locale>
+  </entity>
+</localization>

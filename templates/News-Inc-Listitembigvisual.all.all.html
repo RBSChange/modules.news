@@ -1,0 +1,20 @@
+<span tal:define="global linkedDocument news" tal:omit-tag=""/>
+<span tal:condition="news/hasLinkedPage" tal:omit-tag="">
+	<span tal:define="global linkedDocument news/getLinkedPage" tal:omit-tag=""/>
+</span>
+<span tal:condition="displayLeft" tal:omit-tag="">
+	<span class="news-date"><span change:date="format 'd/m/Y'; value news/getDate" /></span>
+	<h3 change:h=""><a class="link" change:link="document linkedDocument; newsParam[fromNewsList] 'true'" tal:content="news/getLabel" /><a change:edit="document news" /></h3>
+	<span tal:condition="displayVisual"  tal:omit-tag="">
+		<div tal:condition="news/getListvisual" change:media="document news/getListvisual; format 'modules.news.frontoffice/listvisual-big'; class 'float-left'"/>
+	</span>
+	<p class="normal"  tal:content="news/getSummaryAsHtml"/>
+</span>
+<span tal:condition="not: displayLeft" tal:omit-tag="">
+	<span class="news-date"><span change:date="format 'd/m/Y'; value news/getDate" /></span>
+	<h3 change:h=""><a class="link" change:link="document linkedDocument;  newsParam[fromNewsList] 'true'" tal:content="news/getLabel" /><a change:edit="document news" /></h3>
+	<span tal:condition="displayVisual"  tal:omit-tag="" >
+		<div tal:condition="news/getListvisual" change:media="document news/getListvisual; format 'modules.news.frontoffice/listvisual-big'; class 'float-right'"/>
+	</span>
+	<p class="normal"  tal:content="news/getSummaryAsHtml" />
+</span>

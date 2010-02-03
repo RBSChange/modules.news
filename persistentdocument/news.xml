@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd" 
+    model-version="1.0" indexable="true" icon="news" use-correction="true">
+  	<properties>
+  		<add name="publicationstatus" localized="true" />
+		<add name="date" type="DateTime" min-occurs="1" max-occurs="1" />
+		<add name="summary" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true" />
+		<add name="text" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true" />
+		<add name="linkedpage" type="modules_website/page"  min-occurs="0" max-occurs="1" />
+		<add name="listvisual" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="detailvisual" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="datetimeinfo" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true" />
+		<add name="place" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true" />
+		<add name="accessmap" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="contact" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true" />
+  		<add name="attachment" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="priority" type="Integer" min-occurs="0" max-occurs="1" />
+		<add name="startarchivedate" type="DateTime" min-occurs="0" max-occurs="1" />
+		<add name="endarchivedate" type="DateTime" min-occurs="0" max-occurs="1" />
+		<add name="endhomepagedate" type="DateTime" min-occurs="0" max-occurs="1" />
+		<add name="archivevisibility" type="Boolean"  min-occurs="0" max-occurs="1" />
+		<add name="homepagevisibility" type="Boolean"  min-occurs="0" max-occurs="1" />
+	</properties>
+	
+	<serializedproperties>
+		<add name="frontpageduration" type="String" default-value="1w" />
+		<add name="archiveduration" type="String" default-value="1y" />
+		<add name="uselinkedpage" type="Boolean" default-value="false" />
+	</serializedproperties>
+
+
+  	 <statuses default="DRAFT" />
+
+  <workflow start-task="VALIDATIONNEWS">
+  	<!--
+  	Decomment this to activate wwwadmin validation  
+  	<parameter name="AFFECT_TASKS_TO_SUPER_ADMIN">true</parameter>
+  	-->
+    <parameter name="NOTIFICATION_ACTIVATION">modules_news/sendactivatetoauthor</parameter>
+    <parameter name="NOTIFICATION_ERROR">modules_news/sendcanceltoauthor</parameter>
+  </workflow>
+
+</document>

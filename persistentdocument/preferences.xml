@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd" 
+	model-version="1.0" icon="news" publish-on-day-change="false" 
+	backoffice-indexable="false" has-url="false">
+	<properties>
+		<add name="label" default-value="preferences" />
+		<add name="itemperpage" type="Integer" default-value="10" />
+		<add name="listvisualposition" type="String" from-list="modules_news/listvisualposition" default-value="left" />
+		<add name="homepagetemplate" type="String" from-list="modules_news/homepagetemplate" default-value="Onecol" />
+		<add name="rssfeedtitle" type="String" localized="true" />
+		<add name="rssfeedurl" type="String" localized="true" />
+		<add name="rssfeeddescription" type="LongString" localized="true" />
+		<add name="rssitemcount" type="Integer"  default-value="10" />
+		<add name="detailtitle" type="String" localized="true" />
+		<add name="detaildescription" type="LongString" localized="true" />
+		<add name="detailkeywords" type="LongString" localized="true" />
+		<add name="previewpage" type="modules_website/page" />
+	</properties>
+	<statuses default="PUBLICATED" />
+</document>

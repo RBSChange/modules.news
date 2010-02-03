@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+	<section labeli18n="modules.uixul.bo.doceditor.fieldsgroup.Title" class="toggle" image="{HttpHost}/icons/small/news.png">
+		<field name="label" />
+		<field name="date" />
+		<field name="summary" />
+		<field name="text" />
+		<field name="uselinkedpage" />
+		<field name="linkedpage" />
+	</section>
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Publication" class="toggle" hidden="true" image="{HttpHost}/icons/small/calendar.png">
+		<field name="priority" />
+		<field name="startpublicationdate" />
+		<field name="endpublicationdate" />
+		<field name="frontpageduration" type="duration" />
+		<field name="startarchivedate" />
+		<field name="archiveduration" type="duration"  />
+	</section>
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Visuals" class="toggle" hidden="true" image="{HttpHost}/icons/small/pictures.png">
+		<field name="listvisual" />
+		<field name="detailvisual" />
+	</section>
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Misc" class="toggle" hidden="true" image="{HttpHost}/icons/small/misc.png">
+		<field name="contact" />
+		<field name="datetimeinfo" />
+		<field name="place" />
+		<field name="accessmap" />
+		<field name="attachment" />
+	</section>
+	<xul>
+		<javascript>
+			<field name="mInitialized">false</field>
+
+			<constructor><![CDATA[
+				var me = this
+				this.fields['uselinkedpage'].addEventListener('fieldChanged', function (event) {me.onUselinkedpage();}, true);
+				this.addEventListener('panelInitializeComplete', function () { me.mInitialized = true; me.onUselinkedpage(); }, true);
+			]]></constructor>
+
+			<method name="onUselinkedpage">
+				<body><![CDATA[
+					if (this.mInitialized)
+					{
+						var disabeld = (this.fields['uselinkedpage'].value === 'true');
+						this.fields['text'].disabled = disabeld;
+						this.fields['linkedpage'].disabled = !disabeld;
+					}	
+				]]></body>
+			</method>
+
+		</javascript>
+	</xul>
+</panel>

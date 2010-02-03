@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewriting>
+	<rules>
+		<rule documentModel="news" viewMode="detail">
+			<template>/news/$dateYear/$dateMonth/$dateDay/$newsLabel-$lang,$id</template>
+			<parameters>
+				<parameter name="newsLabel"  method="getLabel" />
+				<parameter name="dateYear" format="[0-9]+" method="getDateYear" />
+				<parameter name="dateMonth" format="[0-9]+"  method="getDateMonth" />
+				<parameter name="dateDay" format="[0-9]+"  method="getDateDay" />
+			</parameters>
+		</rule>
+
+		<rule documentModel="news" viewMode="detail" lang="fr">
+			<template>/actualites/$dateYear/$dateMonth/$dateDay/$newsLabel-$lang,$id</template>
+			<parameters>
+				<parameter name="newsLabel"  method="getLabel" />
+				<parameter name="dateYear" format="[0-9]+" method="getDateYear" />
+				<parameter name="dateMonth" format="[0-9]+"  method="getDateMonth" />
+				<parameter name="dateDay" format="[0-9]+"  method="getDateDay" />
+			</parameters>
+		</rule>
+
+		<rule redirection="news/ViewFeed">
+			<template>/news/rss/feed-$lang,$parentref,$cmpref.xml</template>
+			<parameters>
+				<parameter name="parentref" format="[0-9]+" />
+				<parameter name="cmpref" format="[0-9]+"  />
+			</parameters>
+		</rule>
+
+		<rule redirection="news/ViewFeed" lang="fr">
+			<template>/actualites/rss/flux-$lang,$parentref,$cmpref.xml</template>
+			<parameters>
+				<parameter name="parentref" format="[0-9]+" />
+				<parameter name="cmpref" format="[0-9]+"  />
+			</parameters>
+		</rule>
+
+		<rule redirection="news/ViewArchive">
+			<template>/news/archives/</template>
+		</rule>
+
+		<rule redirection="news/ViewArchive" lang="fr">
+			<template>/actualites/archives/</template>
+		</rule>
+
+		<rule redirection="news/ViewList">
+			<template>/news/list/</template>
+		</rule>
+
+		<rule redirection="news/ViewList" lang="fr">
+			<template>/actualites/liste/</template>
+		</rule>
+
+	</rules>
+</urlrewriting>

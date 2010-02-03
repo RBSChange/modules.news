@@ -1,0 +1,20 @@
+<ul class="mini-navigation">
+	<span tal:condition="displayrsslink" tal:omit-tag="">
+	<span tal:condition="hasFeed" tal:omit-tag="">
+		<li>
+			<img change:image="front/rss.gif" alt="*" />
+			<a class="link" change:link="module news; action ViewFeed; cmpref siblingId; parentref containerId" i18n:translate="&modules.news.frontoffice.Rss-link;">RSS</a>
+		</li>
+	</span>
+	</span>
+	<span tal:condition="hasList"  tal:omit-tag="">
+		<li>
+			<a class="link" change:link="module news; action ViewList; cmpref siblingId" i18n:translate="&modules.news.frontoffice.List-link;" />
+		</li>
+	</span>
+	<span tal:condition="hasArchive" tal:omit-tag="">
+		<li>
+			<a class="link" change:link="module news; action ViewArchive; cmpref siblingId" i18n:translate="&modules.news.frontoffice.Archive-link;" />
+		</li>
+	</span>
+</ul>

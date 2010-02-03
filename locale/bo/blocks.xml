@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="news">
+    <locale lang="fr">détail d'une actualité</locale>
+    <locale lang="en">news detail</locale>
+    <locale lang="de">Aktualitätsdetail</locale>
+  </entity>
+  <entity id="news-list">
+    <locale lang="fr">liste de toutes les actualités</locale>
+    <locale lang="en">full news list</locale>
+    <locale lang="de">komplette Aktualitätsliste</locale>
+  </entity>
+  <entity id="contextual-news-list">
+    <locale lang="fr">liste des actualités de la rubrique</locale>
+    <locale lang="en">topic's news list</locale>
+    <locale lang="de">Aktualitätsliste der Rubrik</locale>
+  </entity>
+</localization>

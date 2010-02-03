@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="document-name">
+    <locale lang="fr">préférences</locale>
+  </entity>
+  <entity id="edition-form-title">
+    <locale lang="fr">préférences du module actualités</locale>
+    <locale lang="en">module news preferences</locale>
+    <locale lang="de">Einstellungen Modul Aktualitäten</locale>
+  </entity>
+<!-- display tab -->
+  <entity id="display-spaced">
+    <locale lang="fr"> Propriétés d'affichage</locale>
+    <locale lang="en"> Display properties</locale>
+    <locale lang="de"> Einstellungen Anzeige</locale>
+  </entity>
+  <entity id="itemperpage">
+    <locale lang="fr">nombre d'actualités par page</locale>
+    <locale lang="en">number of news per page</locale>
+    <locale lang="de">Anzahl Aktualitäten pro Seite</locale>
+  </entity>
+  <entity id="itemperpage-help">
+    <locale lang="fr">lorsque plusieurs pages sont nécéssaires pour afficher une liste d'actualité, la valeur de ce champ détermine le nombre d'actualités affichées par page.</locale>
+    <locale lang="en">when several pages are needed to display a news list, the value of this field is used to determine the number of news per page.</locale>
+    <locale lang="de">Sind mehrere Seiten für die Anzeige der Aktualitätenliste nötig, bestimmt der Wert dieses Feldes die Anzahl der angezeigten 
+	Aktualitäten pro Seite.</locale>
+  </entity>
+  <entity id="listvisualposition">
+    <locale lang="fr">position des visuels</locale>
+    <locale lang="en">image position</locale>
+    <locale lang="de">Bilderposition</locale>
+  </entity>
+  <entity id="listvisualposition-help">
+    <locale lang="fr">lorsque une liste d'actualités s'affiche, la valeur de ce champ détermine la position des images des actualités.</locale>
+    <locale lang="en">when a news list is displayed, this field sets the position of the news' image.</locale>
+    <locale lang="de">Wird eine Aktualitätenliste angezeigt, bestimmt der Wert dieses Feld die Bildposition der Aktualitäten.</locale>
+  </entity>
+  <entity id="homepagetemplate">
+    <locale lang="fr">habillage page d'accueil</locale>
+    <locale lang="en">homepage template</locale>
+    <locale lang="de">Startseitenskin</locale>
+  </entity>
+  <entity id="homepagetemplate-help">
+    <locale lang="fr">choix de l'habillage pour l'affichage page d'accueil des listes d'actualités.</locale>
+    <locale lang="en">template used for the homepage news list display.</locale>
+    <locale lang="de">Auswahl des Skins für die Startseitenanzeige der Aktualitätenliste.</locale>
+  </entity>
+  <entity id="onecol">
+    <locale lang="fr">une colonne</locale>
+    <locale lang="en">one column</locale>
+    <locale lang="de">eine Spalte</locale>
+  </entity>
+  <entity id="twocol">
+    <locale lang="fr">deux colonnes</locale>
+    <locale lang="en">two columns</locale>
+    <locale lang="de">zwei Spalten</locale>
+  </entity>
+  <entity id="leftfirst">
+    <locale lang="fr">première actualité à gauche</locale>
+    <locale lang="en">first news left</locale>
+    <locale lang="de">erste Aktualität links</locale>
+  </entity>
+  <entity id="left-visual">
+    <locale lang="fr">à gauche</locale>
+    <locale lang="en">to the left</locale>
+    <locale lang="de">links</locale>
+  </entity>
+  <entity id="right-visual">
+    <locale lang="fr">à droite</locale>
+    <locale lang="en">to the right</locale>
+    <locale lang="de">rechts</locale>
+  </entity>
+  <entity id="alternate-visual">
+    <locale lang="fr">alterné</locale>
+    <locale lang="en">alternating</locale>
+    <locale lang="de">abwechselnd</locale>
+  </entity>
+<!-- feed tab -->
+  <entity id="rss-spaced">
+    <locale lang="fr"> Flux RSS</locale>
+    <locale lang="en"> RSS feed</locale>
+    <locale lang="de"> RSS-Feed</locale>
+  </entity>
+  <entity id="rssfeedtitle">
+    <locale lang="fr">titre du flux RSS</locale>
+    <locale lang="en">RSS feed title</locale>
+    <locale lang="de">RSS-Feed-Titel</locale>
+  </entity>
+  <entity id="rssfeedtitle-help">
+    <locale lang="fr">ce champ détermine le titre du flux RSS d'une liste d'actualités.</locale>
+    <locale lang="en">this field sets the title of a news list's RSS feed.</locale>
+    <locale lang="de">dieses Feld bestimmt den Titel des RSS-Feeds einer Aktualitätenliste.</locale>
+  </entity>
+  <entity id="rssfeedurl">
+    <locale lang="fr">addresse associée au flux RSS</locale>
+    <locale lang="en">URL associated to the RSS feed</locale>
+    <locale lang="de">mit dem RSS-Feed verbundene URL</locale>
+  </entity>
+  <entity id="rssfeedurl-help">
+    <locale lang="fr">ce champ détermine l'addresse associée au flux RSS d'une liste d'actualités.</locale>
+    <locale lang="en">this field sets the URL associated to a news list's RSS feed.</locale>
+    <locale lang="de">dieses Feld bestimmt die mit dem RSS-Feed verbundene Adresse der Aktualitätenliste.</locale>
+  </entity>
+  <entity id="rssfeeddescription">
+    <locale lang="fr">description du flux RSS</locale>
+    <locale lang="en">RSS feed description</locale>
+    <locale lang="de">RSS-Feed Beschreibung</locale>
+  </entity>
+  <entity id="rssfeeddescription-help">
+    <locale lang="fr">ce champ détermine la description du flux RSS d'une liste d'actualités.</locale>
+    <locale lang="en">this field sets the description of a news list's RSS feed.</locale>
+    <locale lang="de">dieses Feld bestimmt die Beschreibung des RSS-Feeds einer Aktualitätenliste.</locale>
+  </entity>
+  <entity id="rssitemcount">
+    <locale lang="fr">nombre d'éléments du flux RSS</locale>
+    <locale lang="en">RSS feed item count</locale>
+    <locale lang="de">Anzahl Elemente des RSS-Feeds</locale>
+  </entity>
+  <entity id="rssitemcount-help">
+    <locale lang="fr">ce champ détermine le nombre d'élèments maximum affiché par le flux RSS du module actualités.</locale>
+    <locale lang="en">this field sets the maximum number of items displayed by the module's RSS feed</locale>
+    <locale lang="de">dieses Feld bestimmt die Anzahl der maximal angezeigten Elemente pro RSS-Feed des Moduls Aktualitäten.</locale>
+  </entity>
+<!-- referencing tab -->
+  <entity id="referencing-spaced">
+    <locale lang="fr"> Référencement</locale>
+    <locale lang="en"> Referencing</locale>
+    <locale lang="de"> Referenzierung</locale>
+  </entity>
+  <entity id="detailtitle">
+    <locale lang="fr">titre de la page de détail</locale>
+    <locale lang="en">detail page title</locale>
+    <locale lang="de">Titel der Detailseite</locale>
+  </entity>
+  <entity id="detailtitle-help">
+    <locale lang="fr">ce champ défini la valeur de la balise meta 'title' de la page de détail d'une actualité. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement
+			remplacé par le titre, le résumé et la date de l'actualité en question.</locale>
+    <locale lang="en">this field sets the value of the 'title' meta tag of a news' detail page. Any occurence of TITLE, SUMMARY or DATE will be automatically replaced by the title, summary, and
+			date of the news displayed</locale>
+    <locale lang="de">dieses Feld bestimmt den Wert des Meta-Tags 'title' der Detailseite einer Aktualität. Enthält das Feld die Worte TITEL, 
+	ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</locale>
+  </entity>
+  <entity id="detaildescription">
+    <locale lang="fr">description de la page de détail</locale>
+    <locale lang="en">detail page description</locale>
+    <locale lang="de">Beschreibung der Detailseite</locale>
+  </entity>
+  <entity id="detaildescription-help">
+    <locale lang="fr">ce champ défini la valeur de la balise meta 'description' de la page de détail d'une actualité. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement
+			remplacé par le titre, le résumé et la date de l'actualité en question.</locale>
+    <locale lang="en">this field sets the value of the 'description' meta tag of a news' detail page. Any occurence of TITLE, SUMMARY or DATE will be automatically replaced by the title, summary,
+			and date of the news displayed</locale>
+    <locale lang="de">dieses Feld bestimmt den Wert des Meta-Tags 'description' der Detailseite einer Aktualität. Enthält das Feld die Worte TITEL, 
+	ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</locale>
+  </entity>
+  <entity id="detailkeywords">
+    <locale lang="fr">mots-clefs de la page de détail</locale>
+    <locale lang="en">detail page keywords</locale>
+    <locale lang="de">Stichwörter der Detailseite</locale>
+  </entity>
+  <entity id="detailkeywords-help">
+    <locale lang="fr">ce champ défini la valeur de la balise meta 'keywords' de la page de détail d'une actualité et doit contenir des mots séparés par des virgules. Si le champ contient les mots
+			TITRE, RESUME ou DATE, ceci seront respectivement remplacé par le titre, le résumé et la date de l'actualité en question.</locale>
+    <locale lang="en">this field sets the value of the 'keywords' meta tag of a news' detail page and should contain comma-separated words only. Any occurence of TITLE, SUMMARY or DATE will be
+			automatically replaced by the title, summary, and date of the news displayed</locale>
+    <locale lang="de">dieses Feld bestimmt den Wert des Meta-Tags 'keywords' der Detailseite einer Aktualität und muss durch Kommata getrennte 
+	Worte enthalten. Enthält das Feld die Worte TITEL, ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</locale>
+  </entity>
+  <entity id="previewpage">
+    <locale lang="fr">page de prévisualisation</locale>
+    <locale lang="en">preview page</locale>
+    <locale lang="de">Vorschauseite</locale>
+  </entity>
+  <entity id="previewpage-help">
+    <locale lang="fr">glissez-déposez une page du site contenant un bloc 'Détail des actualités' pour pouvoir utiliser la fonction de prévisualisation d'une actualité.</locale>
+    <locale lang="en">drang and drop a page containing a "News detail" block to use the 'preview news' function.</locale>
+    <locale lang="de">Setzen Sie durch Drag-and-drop eine Seite der Webseite ein, die einen Block 'Aktualitätendetail' enthält, um die Funktion 
+	der Aktualitätenvorschau nutzen zu können.</locale>
+  </entity>
+  <entity id="display">
+    <locale lang="fr">affichage</locale>
+    <locale lang="en">display</locale>
+  </entity>
+  <entity id="referencing">
+    <locale lang="fr">référencement</locale>
+    <locale lang="en">SEO</locale>
+  </entity>
+  <entity id="rss">
+    <locale lang="fr">flux RSS</locale>
+    <locale lang="en">RSS feeds</locale>
+  </entity>
+</localization>

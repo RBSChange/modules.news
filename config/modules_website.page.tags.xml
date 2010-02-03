@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<tags extends="generic">
+	<tag label="&amp;modules.news.bo.tags.News-list;" icon="list-block">functional_news_news-list</tag>
+	<tag label="&amp;modules.news.bo.tags.News-archive;" icon="archive">functional_news_news-archive</tag>
+	<tag label="&amp;modules.news.bo.tags.News-detail;" icon="news">functional_news_news-detail</tag>
+	<tag label="&amp;modules.news.bo.tags.Website-list;" icon="list-block">contextual_website_website_modules_news_page-list</tag>
+	<tag label="&amp;modules.news.bo.tags.Website-archive;" icon="archive">contextual_website_website_modules_news_page-archive</tag>
+</tags>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="Valid.User-task-title">
+    <locale lang="fr">Validation d'une actualité</locale>
+    <locale lang="de">Freigabe einer Aktualität</locale>
+  </entity>
+  <entity id="Valid-task-title">
+    <locale lang="fr">Validation d'une actualité</locale>
+    <locale lang="de">Freigabe einer Aktualität</locale>
+  </entity>
+  <entity id="AcceptButton">
+    <locale lang="fr">Accepter</locale>
+    <locale lang="de">Übernehmen</locale>
+  </entity>
+  <entity id="RefuseButton">
+    <locale lang="fr">Refuser</locale>
+    <locale lang="de">Ablehnen</locale>
+  </entity>
+  <entity id="User-task-decision-commentary">
+    <locale lang="fr">Commentaire</locale>
+    <locale lang="de">Kommentar</locale>
+  </entity>
+  <entity id="endpublicationdatehome">
+    <locale lang="fr">Fin de de publication en page d'accueil</locale>
+    <locale lang="de">Enddatum der Veröffentlichung auf der Startseite</locale>
+  </entity>
+  <entity id="endpublicationdatearchive">
+    <locale lang="fr">Fin de de publication en page d'archive</locale>
+    <locale lang="de">Enddatum der Veröffentlichung auf der Archivseite</locale>
+  </entity>
+</localization>

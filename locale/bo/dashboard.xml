@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="news-validation">
+    <locale lang="fr">Actualités à valider</locale>
+    <locale lang="de">freizugebende Aktualitäten</locale>
+  </entity>
+  <entity id="task-label-validate">
+    <locale lang="fr">{author} vous demande de publier l'actualité : </locale>
+    <locale lang="de">{author} bittet Sie um Veröffentlichung der Aktualität:</locale>
+  </entity>
+  <entity id="no-news-to-validate">
+    <locale lang="fr">Il n'y a pas d'actualité à valider.</locale>
+    <locale lang="de">Es gibt keine zu veröffentliche Aktualität</locale>
+  </entity>
+</localization>

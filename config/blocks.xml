@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<blocks>
+	<block type="modules_news_news" display="compact: true" icon="news" label="&amp;modules.news.bo.blocks.News;"
+		editable="true">
+		<parameters>
+			<parameter name="linktoallnews" type="Boolean" default-value="false" />
+			<parameter name="linktonewsfromsametopic" type="Boolean" default-value="true" />
+			<parameter name="linksposition" type="String" default-value="both" from-list="modules_news/linksposition" />
+			<!-- <parameter name="compact" type="Boolean" default-value="false" /> -->
+		</parameters>
+		<metas>
+			<meta name="title" allow="title,description" />
+			<meta name="resume" allow="title,description" />
+			<meta name="date" allow="title,description" />
+		</metas>
+	</block>
+	<block type="modules_news_newsContextualList" display="type: classic; includechildren: true; visual: true; itemcount: -1; displayrsslink true;" icon="list-block" label="&amp;modules.news.bo.blocks.Contextual-news-list;"
+		editable="true">
+		<parameters>
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="true" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
+			<parameter name="displayrsslink" type="Boolean" default-value="true" />
+		</parameters>
+	</block>
+	<block type="modules_news_newsList" display="type: classic; includechildren: true; visual: true; itemcount: -1; displayall: true; displayrsslink true;" icon="list-block" label="&amp;modules.news.bo.blocks.News-list;"
+		editable="true">
+		<parameters>
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="true" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
+			<parameter name="displayrsslink" type="Boolean" default-value="true" />
+		</parameters>
+	</block>
+	<block type="modules_news_topic" hidden="true" display="type: classic; includechildren: true; visual: true; itemcount: -1; displayall: true; displayrsslink true;" icon="list-block" label="&amp;modules.news.bo.blocks.News-list;"
+		editable="true">
+		<parameters>
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="true" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
+			<parameter name="displayrsslink" type="Boolean" default-value="true" />
+		</parameters>
+	</block>
+	<block type="modules_news_newsTopic" hidden="true" display="type: classic; includechildren: true; visual: true; itemcount: -1; displayall: true; displayrsslink true;" icon="list-block" label="&amp;modules.news.bo.blocks.News-list;"
+		editable="true">
+		<parameters>
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="true" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
+			<parameter name="displayrsslink" type="Boolean" default-value="true" />
+		</parameters>
+	</block>
+	<block type="modules_news_dashboardnewsvalidation" icon="task" dashboard="true" label="&amp;modules.news.bo.dashboard.News-validation;" />
+</blocks>

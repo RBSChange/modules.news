@@ -1,0 +1,29 @@
+<tal:block tal:define="global linkedDocument news"/>
+<tal:block tal:condition="news/hasLinkedPage">
+  <tal:block tal:define="global linkedDocument news/getLinkedPage"/>
+</tal:block>
+
+<tal:block tal:condition="displayLeft">
+	<span class="news-date"><span change:date="format 'd/m/Y'; value news/getDate" /></span>
+	<h3 change:h="">
+		<a tal:condition="not: removeFromNewsListParameter" class="link" change:link="document linkedDocument; newsParam[fromNewsList] 'true'" tal:content="news/getLabel" />
+		<a tal:condition="removeFromNewsListParameter" class="link" change:link="document linkedDocument" tal:content="news/getLabel" />
+		<a change:edit="document news" />
+	</h3>
+	<tal:block tal:condition="displayVisual">
+		<img tal:condition="news/getListvisual" change:media="document news/getListvisual; format 'modules.news.frontoffice/listvisual'; class 'float-left';"/>
+	</tal:block>
+	<p class="normal" tal:content="news/getSummaryAsHtml" />
+</tal:block>
+<tal:block tal:condition="not: displayLeft">
+	<span class="news-date"><span change:date="format 'd/m/Y'; value news/getDate" /></span>
+	<h3 change:h="">
+		<a tal:condition="not: removeFromNewsListParameter" class="link" change:link="document linkedDocument; newsParam[fromNewsList] 'true'" tal:content="news/getLabel" />
+		<a tal:condition="removeFromNewsListParameter" class="link" change:link="document linkedDocument" tal:content="news/getLabel" />
+		<a change:edit="document news" />
+	</h3>
+	<tal:block tal:condition="displayVisual">
+		<img tal:condition="news/getListvisual" change:media="document news/getListvisual; format 'modules.news.frontoffice/listvisual'; class 'float-right';"/>
+	</tal:block>
+	<p class="normal" tal:content="news/getSummaryAsHtml" />
+</tal:block>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="news-detail">
+    <locale lang="fr">page de détail des actualités de la rubrique</locale>
+    <locale lang="en">topic news detail page</locale>
+    <locale lang="de">Detailseite der Rubrikaktualitäten</locale>
+  </entity>
+  <entity id="news-archive">
+    <locale lang="fr">archives des actualités de la rubrique</locale>
+    <locale lang="en">topic news archives</locale>
+    <locale lang="de">Archive der Rubrikaktualitäten</locale>
+  </entity>
+  <entity id="news-list">
+    <locale lang="fr">liste des actualités de la rubrique</locale>
+    <locale lang="en">topic news list</locale>
+    <locale lang="de">Liste der Rubrikaktualitäten</locale>
+  </entity>
+  <entity id="website-detail">
+    <locale lang="fr">page de détail des actualités pour le site</locale>
+    <locale lang="en">website news detail page</locale>
+    <locale lang="de">Detailseite der Aktualitäten für die Webseite</locale>
+  </entity>
+  <entity id="website-archive">
+    <locale lang="fr">archives des actualités du site</locale>
+    <locale lang="en">website news archives</locale>
+    <locale lang="de">Archive der Webseitenaktualitäten</locale>
+  </entity>
+  <entity id="website-list">
+    <locale lang="fr">liste des actualités du site</locale>
+    <locale lang="en">website news list</locale>
+    <locale lang="de">Liste der Webseitenaktualitäten</locale>
+  </entity>
+</localization>

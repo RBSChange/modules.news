@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/media/persistentdocument/import/media_binding.xml" />
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+	<binding fileName="modules/news/persistentdocument/import/news_binding.xml" />
+	
+	<website byTag="default_modules_website_default-website" template="tplTwo">
+		<topic label="Actualités" id="newstopic">
+			<page label="Liste des actualités" isIndexPage="true" indexingstatus="false">
+				<tag name="functional_news_news-list" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_newsContextualList" />
+				</changecontent>
+			</page>
+			<page label="Archives des actualités" indexingstatus="false">
+				<tag name="functional_news_news-archive" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_newsContextualList" __type="archive" __visual="true" />
+				</changecontent>
+			</page>
+			<page label="Détail d'une actualité" navigationVisibility="hidden" indexingstatus="false">
+				<tag name="functional_news_news-detail" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_news" />
+				</changecontent>
+			</page>	
+			
+			<page label="Liste de toutes les actualités" indexingstatus="false">
+				<tag name="contextual_website_website_modules_news_page-list" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_newsList" />
+				</changecontent>
+			</page>		
+		</topic>
+	</website>
+	
+	<rootfolder module="media">
+		<folder label="Exemple de media Actualité">
+			<media
+				path="modules/news/setup/sample/Anniversaire3.jpg"
+				label="Anniversaire 3" id="photo1" />
+			<media
+				path="modules/news/setup/sample/Anniversaire4.jpg"
+				label="Anniversaire 4" id="photo2" />
+			<media
+				path="modules/news/setup/sample/papillon_change.jpg"
+				label="Papillon change" id="photo3" />
+			<media
+				path="modules/news/setup/sample/RBS batiment open space.jpg"
+				label="RBS batiment open space" id="photo4" />
+			<media
+				path="modules/news/setup/sample/RBS batiment.jpg"
+				label="RBS batiment" id="photo5" />
+		</folder>
+	</rootfolder>
+				
+	<rootfolder module="news">
+		<linkedtopic refid="newstopic">
+			<news 
+				label="Praesent nisi nulla, rhoncus ac" date="2008-09-04 22:00:00" homepagevisibility="true"
+				listvisual-refid="photo3" detailvisual-refid="photo1"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Tincidunt sed, rhoncus ac" date="2008-09-04 22:00:00" homepagevisibility="true"
+				listvisual-refid="photo3" detailvisual-refid="photo2"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Sed sapien risus, rhoncus ac" date="2008-09-04 22:00:00" homepagevisibility="true"
+				detailvisual-refid="photo3"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Vulputate ut, nibh" date="2008-09-04 22:00:00"
+				listvisual-refid="photo3" detailvisual-refid="photo4"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Phasellus rhoncus" date="2008-09-05 22:00:00"
+				detailvisual-refid="photo2"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Maecenas risus" date="2008-09-06 22:00:00"
+				detailvisual-refid="photo5"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Ut blandit nibh auctor arcu" date="2008-10-04 22:00:00"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Dolor at consectetuer porta" date="2008-10-07 22:00:00"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+			<news 
+				label="Integer iaculis" date="2008-10-07 22:00:00"
+				summary="Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus."
+				text="&lt;p&gt;
+Sed sapien risus, rhoncus ac, vehicula ac, vulputate ut, nibh. Praesent nisi nulla, bibendum dapibus, tincidunt sed, dapibus ac, orci. Duis vulputate. Morbi nunc. Donec libero nulla, suscipit eget, hendrerit sit amet, sollicitudin et, libero. Integer metus arcu, malesuada et, vestibulum vel, accumsan in, mi. Curabitur molestie. Vestibulum ut purus. Duis vestibulum orci condimentum diam. Cras congue pharetra mauris! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis tortor. Donec velit mauris, facilisis vel, venenatis id, congue eget; nisi. Nullam dictum laoreet ligula. Pellentesque magna. In lobortis, eros a elementum dictum, est neque sodales quam, in tempor mi leo rhoncus nisi.
+&lt;/p&gt;
+&lt;p&gt;
+Curabitur et libero ut ante porta gravida? Phasellus rhoncus, dolor at consectetuer porta; tortor odio suscipit ante, non congue risus libero eu sapien. Donec ut pede. Suspendisse sapien? Integer arcu metus; bibendum nec, blandit vitae, faucibus quis, odio. Sed euismod sapien a libero. Curabitur placerat scelerisque dui. Praesent convallis dolor quis nisi. Praesent lorem lacus, luctus sed, rutrum non, lacinia non, nisi? Cras et lectus ac nisi eleifend posuere. Suspendisse eu risus luctus ipsum congue fermentum? Praesent eu erat sed nunc ullamcorper vehicula.
+&lt;/p&gt;
+&lt;p&gt;
+Morbi id est et erat fringilla vestibulum. Maecenas risus. Ut blandit nibh auctor arcu. Integer iaculis, neque at aliquet consectetuer, nunc purus placerat elit, et ultrices mi neque vel dolor. Fusce porttitor tellus quis nulla. Suspendisse potenti. Aenean et erat. Integer nisl leo, vulputate vel, elementum at, congue ultricies, tellus. Proin id sapien sed mauris vehicula semper. Suspendisse eget eros vitae erat vehicula dignissim. Proin tempus. Pellentesque at velit ac felis tristique faucibus. Donec euismod dui at nisl.
+&lt;/p&gt;" />
+
+		</linkedtopic>
+	</rootfolder>
+	
+	<preferences label="&amp;modules.news.document.preferences.Edition-form-title;" 
+		itemperpage="5" 
+		listvisualposition="alternate" 
+		homepagetemplate="Onecol" 
+		rssfeedtitle="Actualités"
+		rssfeeddescription="Actualités du site"
+		rssitemcount="5" />
+</script>

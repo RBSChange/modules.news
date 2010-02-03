@@ -1,0 +1,24 @@
+<p tal:condition="container" change:create="" model="news/news" parentId="${container/getId}"><tal:block change:translate="&modules.news.frontoffice.Create-new-in-topic; containerLabel container/getLabel">Créer une actualité dans la rubrique ${container/getLabel}</tal:block></p>
+
+<div change:include="module 'news'; template 'News-Inc-Mininav'; type 'html'; listPage listPage; archivePage archivePage; hasFeed hasFeed; containerId containerId; hasList hasList; hasArchive hasArchive; siblingId siblingId; displayrsslink displayrsslink" />
+
+<div class="cleaner"/>
+
+<ol class="news-one-column">
+	<span tal:repeat="item paginator" tal:omit-tag="">
+
+		<span tal:condition="repeat/item/start" tal:omit-tag="">
+			<li>
+				<div tal:define="position alternator/position" change:include="module 'news'; template 'News-Inc-Listitembigvisual'; type 'html'; displayVisual displayVisual; news item; displayLeft position" />
+				<div class="cleaner"/>
+			</li>
+		</span>
+
+		<span tal:condition="not: repeat/item/start" tal:omit-tag="">
+			<li>
+				<div tal:define="position alternator/position" change:include="module 'news'; template 'News-Inc-Listitem'; type 'html'; displayVisual displayVisual; news item; displayLeft position; removeFromNewsListParameter removeFromNewsListParameter" />
+				<div class="cleaner"/>
+			</li>
+		</span>
+	</span>
+</ol>

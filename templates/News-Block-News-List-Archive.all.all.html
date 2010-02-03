@@ -1,0 +1,62 @@
+<div change:include="module 'news'; template 'News-Inc-Mininav'; type 'html'; listPage listPage; archivePage archivePage; hasFeed hasFeed; containerId containerId; hasList hasList; hasArchive hasArchive; siblingId siblingId; displayrsslink displayrsslink" />
+
+<p tal:condition="isEmpty" i18n:translate="&modules.news.frontoffice.Empty-archive-list;"/>
+
+<span tal:condition="not: isEmpty" tal:omit-tag="">
+
+
+
+	<!-- Years -->
+	<ul class="news">
+		<span tal:repeat="item archivePaginator/yearPaginator" tal:omit-tag="">
+			<span tal:condition="not: item/isEmpty" tal:omit-tag="">
+				<li>
+					<a class="link" tal:condition="not: item/isCurrent" tal:attributes="href item/url" tal:content="item/name"></a>
+					<strong tal:condition="item/isCurrent" tal:content="item/name"/>
+					<span tal:condition="item/isCurrent" tal:omit-tag="">
+						<span tal:define="global currentyear item/name" tal:omit-tag="" />
+					</span>
+					<span tal:condition="not: repeat/item/end"> | </span>
+				</li>
+			</span>
+		</span>
+	</ul>
+
+	
+
+	<!-- Months -->	
+	<ul class="news">
+		<span tal:repeat="item archivePaginator/monthPaginator" tal:omit-tag="">
+			<li>
+				<span tal:condition="not: item/isEmpty"  tal:omit-tag="">
+					<a class="link"tal:condition="not: item/isCurrent" tal:attributes="href item/url" tal:content="item/name"></a>
+					<strong tal:condition="item/isCurrent" tal:content="item/name"/>
+					<span tal:condition="item/isCurrent" tal:omit-tag="">
+						<span tal:define="global currentmonth item/singlename" tal:omit-tag="" />
+					</span>
+				</span>
+				<span tal:condition="item/isEmpty"  tal:omit-tag="">
+					<span tal:content="item/name" tal:omit-tag=""/>
+				</span>
+				<span tal:condition="not: repeat/item/end"> | </span>
+			</li>
+		</span>
+	</ul>
+
+
+
+	<span tal:define="global currentdate string:$currentmonth $currentyear" tal:omit-tag="" />
+
+	<h2 change:h="" tal:content="currentdate" />
+
+	<ol class="news">
+		<span tal:repeat="item paginator" tal:omit-tag="">
+			<li>
+				<div tal:define="position alternator/position" change:include="module 'news'; template 'News-Inc-Listitem'; type 'html'; displayVisual displayVisual; news item; displayLeft position; removeFromNewsListParameter removeFromNewsListParameter" />
+			</li>
+		</span>
+	</ol>
+
+	<div change:paginator="paginator"/>
+
+</span>

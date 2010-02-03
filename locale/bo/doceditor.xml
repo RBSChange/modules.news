@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+	<entity id="fieldsgroup.visuals">
+		<locale lang="fr">visuels</locale>
+		<locale lang="en">pictures</locale>
+	</entity>
+	<entity id="fieldsgroup.misc">
+		<locale lang="fr">informations complémentaires</locale>
+		<locale lang="en">additional informations</locale>
+	</entity>
+	<entity id="fieldsgroup.publication">
+		<locale lang="fr">réglages de la publication</locale>
+		<locale lang="en">publication settings</locale>
+	</entity>
+	<entity id="property.Frontpage">
+		<locale lang="fr">visible en page d'accueil</locale>
+		<locale lang="en">frontpage display</locale>
+	</entity>
+</localization>

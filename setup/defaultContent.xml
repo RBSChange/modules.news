@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+	<binding fileName="modules/news/persistentdocument/import/news_binding.xml" />
+	
+	<website byTag="default_modules_website_default-website" template="tplTwo">
+		<topic label="Actualités" id="newstopic">
+			<page label="Liste des actualités" isIndexPage="true" indexingstatus="false">
+				<tag name="functional_news_news-list" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_newsContextualList" />
+				</changecontent>
+			</page>
+			<page label="Archives des actualités" indexingstatus="false">
+				<tag name="functional_news_news-archive" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_newsContextualList" __type="archive" __visual="true" />
+				</changecontent>
+			</page>
+			<page label="Détail d'une actualité" navigationVisibility="hidden" indexingstatus="false">
+				<tag name="functional_news_news-detail" />
+				<changecontent for="content-block">
+					<changeblock type="modules_news_news" />
+				</changecontent>
+			</page>
+		</topic>
+	</website>
+	
+	<rootfolder module="news">
+		<linkedtopic refid="newstopic" />
+	</rootfolder>
+	
+	<preferences label="&amp;modules.news.document.preferences.Edition-form-title;" 
+		itemperpage="5" 
+		listvisualposition="alternate" 
+		homepagetemplate="Onecol" />
+</script>

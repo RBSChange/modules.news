@@ -1,0 +1,65 @@
+<!-- Mini navigation -->
+<ul class="mini-navigation" tal:condition="php: (linksposition == 'top' || linksposition == 'both')  AND (linktoallnews == 'true' || linktonewsfromsametopic == 'true')">
+	<li tal:condition="php: linktoallnews == 'true'">
+		<a class="link" change:link="tag ctx_news_page-list" i18n:translate="&modules.news.frontoffice.All-news;" />
+	</li>
+	<li tal:condition="php: linktonewsfromsametopic == 'true'">
+		<a class="link" change:link="tag functional_news_news-list" i18n:translate="&modules.news.frontoffice.News-in-the-same-topic;" />
+	</li>
+</ul>
+
+
+
+<!-- News date and title -->
+<span class="news-date"><span change:date="format 'd/m/Y';value news/getDate" /></span>
+<h2 change:h="">${news/getLabel} <a change:edit="document news" /></h2>
+
+<!-- News associated picture -->
+<img tal:condition="news/getDetailvisual" change:media="document news/getDetailvisual; class 'float-left'; format 'modules.news.frontoffice/detailvisual'"/>
+
+<!-- News summary -->
+<div class="chapo" tal:condition="news/getSummary" tal:content="news/getSummaryAsHtml"/>
+
+<!-- News text content -->
+<div class="richtext text-content" tal:condition="news/getText" tal:content="news/getTextAsHtml"/>
+
+<!-- News detail (date & schedule, place, access plan, joined files, contact) -->
+<ul class="detail">
+	<li tal:condition="news/getDatetimeinfoAsHtml">
+		<strong i18n:translate="&modules.news.frontoffice.Detail-datetimeinfo;"/>
+		<span class="hidden"> : </span>
+		<div class="information" tal:condition="news/getDatetimeinfoAsHtml" tal:content="news/getDatetimeinfoAsHtml"/>
+	</li>
+	<li tal:condition="news/getPlaceAsHtml">
+		<strong i18n:translate="&modules.news.frontoffice.Detail-place;"/>
+		<span class="hidden"> : </span>
+		<div class="information" tal:condition="news/getPlaceAsHtml" tal:content="news/getPlaceAsHtml"/>
+	</li>
+	<li tal:condition="news/getAccessmap">
+		<strong i18n:translate="&modules.news.frontoffice.Detail-accessmap;"/>
+		<span class="hidden"> : </span>
+		<div class="information"><div change:download="news/getAccessmap"/></div>
+	</li>
+	<li tal:condition="news/getAttachment">
+		<strong i18n:translate="&modules.news.frontoffice.Detail-attachment;"/>
+		<span class="hidden"> : </span>
+		<div class="information"><div change:download="news/getAttachment"/></div>
+	</li>
+	<li tal:condition="news/getContactAsHtml">
+		<strong i18n:translate="&modules.news.frontoffice.Detail-contact;" />
+		<span class="hidden"> : </span>
+		<div class="information" tal:condition="news/getContactAsHtml" tal:content="news/getContactAsHtml" />
+	</li>
+</ul>
+
+
+
+<!-- Mini navigation -->
+<ul class="mini-navigation" tal:condition="php: (linksposition == 'bottom' || linksposition == 'both') AND (linktoallnews == 'true' || linktonewsfromsametopic == 'true')">
+	<li tal:condition="php: linktoallnews == 'true'">
+		<a class="link" change:link="tag ctx_news_page-list" i18n:translate="&modules.news.frontoffice.All-news;" />
+	</li>
+	<li tal:condition="php: linktonewsfromsametopic == 'true'">
+		<a class="link" change:link="tag functional_news_news-list" i18n:translate="&modules.news.frontoffice.News-in-the-same-topic;" />
+	</li>
+</ul>

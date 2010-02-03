@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<binding fileName="modules/news/persistentdocument/import/news_binding.xml" />
+
+	<rootfolder module="preferences">
+		<newspreferences />
+	</rootfolder>
+		
+	<systemfolder module="list" relatedmodule="news">
+		<staticlist listid="modules_news/yearsamount"
+			label="&amp;modules.news.list.year.label;" 
+			description="&amp;modules.news.list.year.description;">
+				<staticitem label="1" value="1"/>
+				<staticitem label="2" value="2"/>
+				<staticitem label="3" value="3"/>
+				<staticitem label="4" value="4"/>
+				<staticitem label="5" value="5"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/monthsamount"
+			label="&amp;modules.news.list.month.label;" 
+			description="&amp;modules.news.list.month.description;">
+				<staticitem label="1" value="1"/>
+				<staticitem label="2" value="2"/>
+				<staticitem label="3" value="3"/>
+				<staticitem label="4" value="4"/>
+				<staticitem label="5" value="5"/>
+				<staticitem label="6" value="6"/>
+				<staticitem label="7" value="7"/>
+				<staticitem label="8" value="8"/>
+				<staticitem label="9" value="9"/>
+				<staticitem label="10" value="10"/>
+				<staticitem label="11" value="11"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/weeksamount"
+			label="&amp;modules.news.list.week.label;" 
+			description="&amp;modules.news.list.week.description;">
+				<staticitem label="1" value="1"/>
+				<staticitem label="2" value="2"/>
+				<staticitem label="3" value="3"/>
+				<staticitem label="4" value="4"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/listvisualposition"
+			label="Position des visuels" 
+			description="Position des visuels">
+				<staticitem label="&amp;modules.news.document.preferences.Left-visual;" value="left"/>
+				<staticitem label="&amp;modules.news.document.preferences.Right-visual;" value="right"/>
+				<staticitem label="&amp;modules.news.document.preferences.Alternate-visual;" value="alternate"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/homepagetemplate"
+			label="Style d'affichage en page d'accueil" 
+			description="Style d'affichage en page d'accueil">
+				<staticitem label="&amp;modules.news.document.preferences.Onecol;" value="Onecol"/>
+				<staticitem label="&amp;modules.news.document.preferences.Twocol;" value="Twocol"/>
+				<staticitem label="&amp;modules.news.document.preferences.Leftfirst;" value="Leftfirst"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/blockdisplaylisttype"
+			label="Type d'affichage de la liste" 
+			description="Type d'affichage de la liste">
+				<staticitem label="&amp;modules.news.bo.general.Classic-display;" value="classic"/>
+				<staticitem label="&amp;modules.news.bo.general.Homepage-display;" value="homepage"/>
+				<staticitem label="&amp;modules.news.bo.general.Archive-display;" value="archive"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/blockdisplaytimeordered"
+			label="Ordre d'affichagedes news" 
+			description="Ordre d'affichage des news">
+				<staticitem label="&amp;modules.news.bo.general.Achrono-display;" value="false"/>
+				<staticitem label="&amp;modules.news.bo.general.Chrono-display;" value="true"/>
+		</staticlist>
+		
+		<staticlist listid="modules_news/linksposition"
+			label="Position des liens" 
+			description="Position des liens">
+				<staticitem label="&amp;modules.news.bo.general.Position-both;" value="both"/>
+				<staticitem label="&amp;modules.news.bo.general.Position-top;" value="top"/>
+				<staticitem label="&amp;modules.news.bo.general.Position-bottom;" value="bottom"/>
+		</staticlist>
+			
+	</systemfolder>
+</script>

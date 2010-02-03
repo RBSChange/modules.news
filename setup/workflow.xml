@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/notification/persistentdocument/import/notification_binding.xml" />
+	<binding fileName="modules/workflow/persistentdocument/import/workflow_binding.xml" />
+
+	<systemfolder module="notification" relatedmodule="news">	
+			<notification id="ncreate" codename="modules_news/newNewsValidation" 
+				label="Demande de publication d'une actualité"
+				availableparameters="{documentId}, {documentLabel}, {documentLang}, {documentPath}, {workflowId}, {workflowLabel}, {transitionId}, {transitionLabel}, {currentUserId}, {currentUserFullname}, {__LAST_COMMENTARY}, {__LAST_DECISION}"
+				subject="Demande de publication de l'actualité : {documentLabel}"
+				header="Processus de validation d'une actualité en vu de ca publication"
+				body="{workflowAuthor} vous a demandé de valider l'actualité &lt;strong&gt;{documentPath} : {documentLabel}&lt;/strong&gt;."
+				footer="Veuillez vous connecter a &lt;a href=&quot;{UIHOST}/admin&quot; class=&quot;link&quot; &gt;l'interface d'administration&lt;/a&gt; pour effectuer cette tâche." 
+				/>
+
+			<notification id="nterminate" codename="modules_news/NewsValidationTermination" 
+				label="Demande de publication d'une actualité effectuée"
+				availableparameters="{documentId}, {documentLabel}, {documentLang}, {documentPath}, {workflowId}, {workflowLabel}, {transitionId}, {transitionLabel}, {currentUserId}, {currentUserFullname}, {__LAST_COMMENTARY}, {__LAST_DECISION}"
+				subject="Vous avez traité la demande de publication de l'actualité : {documentLabel}"
+				header="Processus de validation d'une actualité en vu de ca publication"
+				body="Récapitulatif des informations :&lt;br/&gt;
+- Page : &lt;strong&gt;{documentPath} / {documentLabel}&lt;/strong&gt; &lt;br/&gt;
+- Décision : {__LAST_DECISION}&lt;br/&gt;
+- Commentaire : {__LAST_COMMENTARY}"
+				footer="&lt;a href=&quot;{UIHOST}/admin&quot; class=&quot;link&quot; &gt;Interface d'administration&lt;/a&gt;" 
+				/>
+			
+			<notification codename="modules_news/sendactivatetoauthor"
+				label="Confirmation de la publication d'une actualité à l'auteur" 
+				availableparameters="{documentId}, {documentLabel}, {documentLang}, {documentPath}, {workflowId}, {workflowLabel}, {transitionId}, {transitionLabel}, {currentUserId}, {currentUserFullname}, {__LAST_COMMENTARY}, {__LAST_DECISION}" 				
+				subject="Votre demande de publication à été acceptée pour l'actualité : {documentLabel}"
+				body="Votre travail sur l'actualité &lt;strong&gt;{documentPath} : {documentLabel}&lt;/strong&gt; à été validé par {currentUserFullname}.&lt;br/&gt;
+- Commentaire : {__LAST_COMMENTARY}"
+				/>
+			
+			<notification codename="modules_news/sendcanceltoauthor"
+				label="Refus de la publication d'une actualité à l'auteur" 
+				availableparameters="{documentId}, {documentLabel}, {documentLang}, {documentPath}, {workflowId}, {workflowLabel}, {transitionId}, {transitionLabel}, {currentUserId}, {currentUserFullname}, {__LAST_COMMENTARY}, {__LAST_DECISION}" 				
+				subject="Votre demande de publication à été refusée pour l'actualité : {documentLabel}"
+				body="Votre travail sur l'actualité &lt;strong&gt;{documentPath}{documentLabel}&lt;/strong&gt; à été refusé par {currentUserFullname}.&lt;br/&gt;
+- Commentaire : {__LAST_COMMENTARY}"
+				/>
+	</systemfolder>
+	
+	<systemfolder module="workflow" relatedmodule="news">
+		<workflow starttaskid="VALIDATIONNEWS" label="Publication d'une actualité">
+			<places>
+				<startplace id="pStart" label="Début du workflow de publication" 
+					description="Début du workflow de publication"/>
+
+				<place id="p2" label="Attente de publication" 
+					description="Attente de la publication de l'actualité" />
+				
+				<place id="p6" label="Publication automatique de l'actualité par l'auteur" 
+					description="Publication automatique de l'actualité par l'auteur" />
+								
+				<place id="p4" label="Publication de l'actualité acceptée" 
+					description="Publication de l'actualité acceptée" />
+				
+				<place id="p5" label="Publication de l'actualité refusée" 
+					description="Publication de l'actualité refusée" />
+
+				<endplace id="pEnd" label="Fin du workflow de publication" 
+					description="Fin du workflow de publication" />
+			</places>
+			
+			<transitions>
+			
+				<transition id="t0" label="Cherche un validateur" 
+						description="Cherche le validateur adéquat"
+						taskid="VALIDATIONNEWS" 
+						trigger="AUTO" roleid="Validator"
+						actionname="news_SelectNextActorsWorkflowaction" 
+						/>
+														
+				<transition id="t2" label="Validation de l'actualité" 
+						description="Le contenu est validé ou refusé."
+						taskid="VALIDATIONNEWS"
+						trigger="USER" roleid="Validator"
+						actionname="news_ValidNewsWorkflowaction" 
+						creationnotification-refid="ncreate"
+						terminationnotification-refid="nterminate"				
+						/>
+							
+				<transition id="t3" label="Publication de l'actualité" 
+						description="Publication de l'actualité"
+						taskid="VALIDATIONNEWS" 
+						trigger="AUTO"
+						actionname="news_ActiveNewsWorkflowaction" 
+						/>
+				
+				<transition id="t4" label="Annulation de la publication de l'actualité" 
+						description="Annulation de la publication de l'actualité, celle ci retourne à l'état brouillon."
+						taskid="VALIDATIONNEWS" 
+						trigger="AUTO"
+						actionname="news_CancelNewsWorkflowaction" />	
+			</transitions>
+			
+			<arcs>
+				<arc direction="IN" place-refid="pStart" transition-refid="t0" arctype="SEQ" />
+			
+				<arc direction="OUT" transition-refid="t0"  place-refid="p6" arctype="EX_OR_SP" precondition="AUTO" />
+				<arc direction="IN" place-refid="p6" transition-refid="t3" arctype="SEQ" />
+				
+				<arc direction="OUT" transition-refid="t0"  place-refid="p2" arctype="EX_OR_SP" precondition="FOUNDED" />					
+				<arc direction="IN" place-refid="p2" transition-refid="t2" arctype="SEQ" />
+			
+				<arc direction="OUT" transition-refid="t2"  place-refid="p4" arctype="EX_OR_SP" precondition="ACCEPTED" />
+				<arc direction="OUT" transition-refid="t2"  place-refid="p5" arctype="EX_OR_SP" precondition="REFUSED"  />
+				
+				<arc direction="IN" place-refid="p4" transition-refid="t3" arctype="SEQ" />
+				<arc direction="IN" place-refid="p5" transition-refid="t4" arctype="SEQ" />
+				
+				<arc direction="OUT" transition-refid="t3"  place-refid="pEnd" arctype="SEQ" />
+				<arc direction="OUT" transition-refid="t4"  place-refid="pEnd" arctype="SEQ" />
+			</arcs>
+		</workflow>		
+	</systemfolder>
+</script>

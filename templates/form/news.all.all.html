@@ -1,0 +1,54 @@
+<form change:form="beanClass news_persistentdocument_news">
+<ul change:errors="" />
+	<input change:field="name beanId" hidden="true" />
+	<p><input change:submit="" name="${submitAction}"
+		label="&modules.generic.frontoffice.buttons.Save;" class="button" /> <a
+		tal:condition="edit_from_url" class="button" href="${edit_from_url}"
+		onclick="${cancel_confirm}"><tal:block change:translate="&modules.generic.frontoffice.buttons.Cancel;" /></a></p>
+	<div change:tabs="id eventform">
+	<div
+		change:tab="name title; label &modules.uixul.bo.doceditor.fieldsgroup.Title;">
+	<ol>
+		<li class="first"><input change:field="name label" /></li>
+		<li><input change:field="name date" /></li>
+		<li><input change:field="name summary" /></li>
+		<li><input change:field="name text" /></li>
+		<li><input change:documentpicker="name linkedpage" /></li>
+	</ol>
+	</div>
+	<div
+		change:tab="name publication; label &modules.news.bo.doceditor.fieldsgroup.Publication;">
+	<ol>
+		<li class="first"><input change:field="name priority" /></li>
+		<li><input change:field="name startpublicationdate" /></li>
+		<li><input change:field="name endpublicationdate" /></li>
+		<li><input change:durationinput="name frontpageduration" labeled="true" /></li>
+		<li><input change:field="name startarchivedate" /></li>
+		<li><input change:durationinput="name archiveduration" labeled="true" /></li>
+	</ol>
+	</div>
+	<div
+		change:tab="name visuals; label &modules.news.bo.doceditor.fieldsgroup.Visuals;">
+	<ol>
+		<li class="first"><input change:documentpicker="name listvisual" /></li>
+		<li><input change:documentpicker="name detailvisual" /></li>
+	</ol>
+	</div>
+	<div
+		change:tab="name misc; label &modules.news.bo.doceditor.fieldsgroup.Misc;">
+	<ol>
+
+		<li class="first"><input change:field="name contact" /></li>
+		<li><input change:field="name datetimeinfo" /></li>
+		<li><input change:field="name place" /></li>
+		<li><input change:documentpicker="name accessmap" /></li>
+		<li><input change:documentpicker="name attachment" /></li>
+	</ol>
+	</div>
+
+	</div>
+	<p><input change:submit="" name="${submitAction}"
+		label="&modules.generic.frontoffice.buttons.Save;" class="button" /> <a
+		tal:condition="edit_from_url" class="button" href="${edit_from_url}"
+		onclick="${cancel_confirm}"><tal:block change:translate="&modules.generic.frontoffice.buttons.Cancel;" /></a></p>
+</form>
