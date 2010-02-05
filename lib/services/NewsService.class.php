@@ -416,6 +416,18 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
+	 * @see f_persistentdocument_DocumentService::preDuplicate()
+	 *
+	 * @param f_persistentdocument_PersistentDocument $newDocument
+	 * @param f_persistentdocument_PersistentDocument $originalDocument
+	 * @param Integer $parentNodeId
+	 */
+	protected function preDuplicate($newDocument, $originalDocument, $parentNodeId)
+	{
+		//ALLOW duplicat news
+	}
+
+	/**
 	 * Returns the "detail" link of the news document which is either the document's url of the URL of it's linked page.
 	 *
 	 * @param news_persistentdocument_news $news
