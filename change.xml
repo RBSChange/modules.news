@@ -4,7 +4,7 @@
 	<type>change-module</type>
 	<license>os</license>
 	<repository>public</repository>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<description>Actualités</description>
 	<dependencies>
 		<dependency>
