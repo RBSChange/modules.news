@@ -19,6 +19,7 @@
 				<child model="modules_news/news" />
 				<child model="modules_website/topic" />
 			</children>
+			<styles properties="newsStatus" />
 			<drops>
 				<drop model="modules_news/news" action="move" />
 			</drops>
