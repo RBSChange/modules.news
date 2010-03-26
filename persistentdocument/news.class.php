@@ -52,12 +52,12 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 				$fullText .= " " . $idxDoc->getLabel() . " : " . $idxDoc->getText();
 			}
 		}
-		$fullText .= " " . $this->getSummaryAsHtml();
-		$fullText .= " " . $this->getTextAsHtml();
-		$fullText .= " " . $this->getDatetimeinfoAsHtml();
-		$fullText .= " " . $this->getPlaceAsHtml();
-		$fullText .= " " . $this->getContactAsHtml();
-		return $fullText;
+		$fullText .= " " . $this->getSummary();
+		$fullText .= " " . $this->getText();
+		$fullText .= " " . $this->getDatetimeinfo();
+		$fullText .= " " . $this->getPlace();
+		$fullText .= " " . $this->getContact();
+		return f_util_StringUtils::htmlToText($fullText, false);
 	}
 
 	/**
