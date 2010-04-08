@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <panel>
 	<section labeli18n="modules.news.document.preferences.Edition-form-title" 
-		class="toggle" image="{HttpHost}/icons/small/television.png">
+		class="toggle" image="{IconsBase}/small/television.png">
 		<field name="itemperpage" />
 		<field name="listvisualposition" />
 		<field name="homepagetemplate" />
 		<field name="previewpage" />
 	</section>
 	<section labeli18n="modules.news.document.preferences.Rss" 
-		class="toggle" image="{HttpHost}/icons/small/rss.png">
+		class="toggle" image="{IconsBase}/small/rss.png">
 		<field name="rssfeedtitle" />
 		<field name="rssfeeddescription" />
 		<field name="rssitemcount" />
 	</section>
 	<section labeli18n="modules.news.document.preferences.Referencing" 
-		class="toggle" image="{HttpHost}/icons/small/referencing.png">
+		class="toggle" image="{IconsBase}/small/referencing.png">
 		<field name="detailtitle" />
 		<field name="detaildescription" />
 		<field name="detailkeywords" />

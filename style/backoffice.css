@@ -1,15 +1,15 @@
 treechildren::-moz-tree-image(modules_news_news){
-	list-style-image: url(/icons/small/news.png) ;
+	list-style-image: url(/changeicons/small/news.png) ;
 }
 treechildren::-moz-tree-image(modules_news_news archive){
-	list-style-image: url(/icons/small/books.png) ;
+	list-style-image: url(/changeicons/small/books.png) ;
 }
 treechildren::-moz-tree-image(modules_news_news homepage){
-	list-style-image: url(/icons/small/news_view.png) ;
+	list-style-image: url(/changeicons/small/news_view.png) ;
 }
 treechildren::-moz-tree-image(modules_news_news ghost){
-	list-style-image: url(/icons/small/ghost.png) ;
+	list-style-image: url(/changeicons/small/ghost.png) ;
 }
 treechildren::-moz-tree-image(modules_news_preferences){
-	list-style-image: url(/icons/small/news.png) ;
+	list-style-image: url(/changeicons/small/news.png) ;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <panel>
-	<section labeli18n="modules.uixul.bo.doceditor.fieldsgroup.Title" class="toggle" image="{HttpHost}/icons/small/news.png">
+	<section labeli18n="modules.uixul.bo.doceditor.fieldsgroup.Title" class="toggle" image="{IconsBase}/small/news.png">
 		<field name="label" />
 		<field name="date" />
 		<field name="summary" />
@@ -8,7 +8,7 @@
 		<field name="uselinkedpage" />
 		<field name="linkedpage" />
 	</section>
-	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Publication" class="toggle" hidden="true" image="{HttpHost}/icons/small/calendar.png">
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Publication" class="toggle" hidden="true" image="{IconsBase}/small/calendar.png">
 		<field name="priority" />
 		<field name="startpublicationdate" />
 		<field name="endpublicationdate" />
@@ -16,11 +16,11 @@
 		<field name="startarchivedate" />
 		<field name="archiveduration" type="duration"  />
 	</section>
-	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Visuals" class="toggle" hidden="true" image="{HttpHost}/icons/small/pictures.png">
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Visuals" class="toggle" hidden="true" image="{IconsBase}/small/pictures.png">
 		<field name="listvisual" />
 		<field name="detailvisual" />
 	</section>
-	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Misc" class="toggle" hidden="true" image="{HttpHost}/icons/small/misc.png">
+	<section labeli18n="modules.news.bo.doceditor.fieldsgroup.Misc" class="toggle" hidden="true" image="{IconsBase}/small/misc.png">
 		<field name="contact" />
 		<field name="datetimeinfo" />
 		<field name="place" />
