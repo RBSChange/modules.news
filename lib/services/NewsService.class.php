@@ -464,10 +464,10 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	 *
 	 * @param news_persistentdocument_news $document
 	 * @param string $forModuleName
-	 * @param unknown_type $allowedSections
+	 * @param array $allowedSections
 	 * @return array
 	 */
-	public function getResume($document, $forModuleName, $allowedSections)
+	public function getResume($document, $forModuleName, $allowedSections = null)
 	{
 		$data = parent::getResume($document, $forModuleName, $allowedSections);
 		$data['properties']['frontpage'] = f_Locale::translateUI('&modules.uixul.bo.general.' . ($document->getHomepagevisibility() ? 'Yes;' : 'No;'));
