@@ -60,7 +60,7 @@ class news_patch_0300 extends patch_BasePatch
 				{
 					$archiveduration = $row['archiveweek'] . 'w';
 				}
-				$news->setFrontpageduration($archiveduration);
+				$news->setArchiveduration($archiveduration);
 				if ($news->getLinkedpage() != null)
 				{
 					$news->setUselinkedpage("true");
