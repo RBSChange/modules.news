@@ -13,10 +13,4 @@
 		<field name="rssfeeddescription" />
 		<field name="rssitemcount" />
 	</section>
-	<section labeli18n="modules.news.document.preferences.Referencing" 
-		class="toggle" image="{IconsBase}/small/referencing.png">
-		<field name="detailtitle" />
-		<field name="detaildescription" />
-		<field name="detailkeywords" />
-	</section>
 </panel>

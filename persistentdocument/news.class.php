@@ -94,6 +94,7 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 	
 	/**
 	 * @return String
+	 * @deprecated 
 	 */
 	public function getDetailmetatitle()
 	{
@@ -111,6 +112,7 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 
 	/**
 	 * @return String
+	 * @deprecated 
 	 */
 	public function getDetaildescription()
 	{
@@ -124,6 +126,7 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 
 	/**
 	 * @return String
+	 * @deprecated 
 	 */
 	public function getDetailkeywords()
 	{
@@ -170,6 +173,7 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 	/**
 	 * @param String $target
 	 * @return String
+	 * @deprecated
 	 */
 	private function replaceMeta($target)
 	{
