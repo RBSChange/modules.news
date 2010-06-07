@@ -36,20 +36,15 @@
 	
 	<rootfolder module="media">
 		<folder label="Exemple de media Actualité">
-			<media
-				path="modules/news/setup/sample/Anniversaire3.jpg"
+			<media path="modules/news/setup/sample/Anniversaire3.jpg"
 				label="Anniversaire 3" id="photo1" />
-			<media
-				path="modules/news/setup/sample/Anniversaire4.jpg"
+			<media path="modules/news/setup/sample/Anniversaire4.jpg"
 				label="Anniversaire 4" id="photo2" />
-			<media
-				path="modules/news/setup/sample/papillon_change.jpg"
+			<media path="modules/news/setup/sample/papillon_change.jpg"
 				label="Papillon change" id="photo3" />
-			<media
-				path="modules/news/setup/sample/RBS batiment open space.jpg"
+			<media path="modules/news/setup/sample/RBS_batiment_open_space.jpg"
 				label="RBS batiment open space" id="photo4" />
-			<media
-				path="modules/news/setup/sample/RBS batiment.jpg"
+			<media path="modules/news/setup/sample/RBS_batiment.jpg"
 				label="RBS batiment" id="photo5" />
 		</folder>
 	</rootfolder>
