@@ -35,6 +35,11 @@
 				<child model="modules_website/topic" />
 				<child model="modules_website/systemtopic" />
 			</children>
+			<columns>
+				<column name="specialvisibility" label="specialvisibility" flex="2"/>
+				<column name="startpub" label="startpublicationdate" flex="1"/>
+				<column name="endpub" label="startpublicationdate" flex="1"/>
+			</columns>
 			<styles properties="newsStatus" />
 			<drops>
 				<drop model="modules_news/news" action="move" />
@@ -52,6 +57,11 @@
 				<child model="modules_website/topic" />
 				<child model="modules_website/systemtopic" />
 			</children>
+			<columns>
+				<column name="specialvisibility" label="specialvisibility" flex="2"/>
+				<column name="startpub" label="startpublicationdate" flex="1"/>
+				<column name="endpub" label="startpublicationdate" flex="1"/>
+			</columns>
 			<styles properties="newsStatus" />
 			<drops>
 				<drop model="modules_news/news" action="move" />

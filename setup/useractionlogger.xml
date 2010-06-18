@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="news" actionname="update.news" label="modules.news.bo.useractionlogger.update-news"/>
+  <actiondef modulename="news" actionname="savepermissions.rootfolder" label="modules.news.bo.useractionlogger.savepermissions-rootfolder"/>
+  <actiondef modulename="news" actionname="createworkflowinstance.news" label="modules.news.bo.useractionlogger.createworkflowinstance-news"/>
+</script>

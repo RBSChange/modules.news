@@ -1,14 +1,11 @@
 treechildren::-moz-tree-image(modules_news_news){
 	list-style-image: url(/changeicons/small/news.png) ;
 }
-treechildren::-moz-tree-image(modules_news_news archive){
-	list-style-image: url(/changeicons/small/books.png) ;
+treechildren::-moz-tree-cell-text(modules_news_news archive){
+	font-style: italic;
 }
-treechildren::-moz-tree-image(modules_news_news homepage){
-	list-style-image: url(/changeicons/small/news_view.png) ;
-}
-treechildren::-moz-tree-image(modules_news_news ghost){
-	list-style-image: url(/changeicons/small/ghost.png) ;
+treechildren::-moz-tree-cell-text(modules_news_news homepage){
+	font-weight: bolder;
 }
 treechildren::-moz-tree-image(modules_news_preferences){
 	list-style-image: url(/changeicons/small/news.png) ;
