@@ -36,9 +36,9 @@
 				<child model="modules_website/systemtopic" />
 			</children>
 			<columns>
-				<column name="specialvisibility" label="specialvisibility" flex="2"/>
-				<column name="startpub" label="startpublicationdate" flex="1"/>
-				<column name="endpub" label="startpublicationdate" flex="1"/>
+				<column name="specialvisibility" label="Specialvisibility" flex="2"/>
+				<column name="startpub" label="Startpublicationdate" flex="1"/>
+				<column name="endpub" label="Startpublicationdate" flex="1"/>
 			</columns>
 			<styles properties="newsStatus" />
 			<drops>
@@ -58,9 +58,9 @@
 				<child model="modules_website/systemtopic" />
 			</children>
 			<columns>
-				<column name="specialvisibility" label="specialvisibility" flex="2"/>
-				<column name="startpub" label="startpublicationdate" flex="1"/>
-				<column name="endpub" label="startpublicationdate" flex="1"/>
+				<column name="specialvisibility" label="Specialvisibility" flex="2"/>
+				<column name="startpub" label="Startpublicationdate" flex="1"/>
+				<column name="endpub" label="Startpublicationdate" flex="1"/>
 			</columns>
 			<styles properties="newsStatus" />
 			<drops>
