@@ -34,8 +34,10 @@
 		</role>
 		<role name="Validator" extend="Guest">
 			<permission name="Load.*" />
-			<permission name="Activate.news" />
-			<permission name="Cancel.news" />
+			<permission name="Activate.*" />
+			<permission name="Deactivated.*" />
+			<permission name="ReActivate.*" />
+			<permission name="Cancel.*" />
 		</role>
 		<role name="Guest" extend="User">
 			<permission name="Enabled" />
