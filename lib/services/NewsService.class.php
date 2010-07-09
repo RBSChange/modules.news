@@ -8,6 +8,7 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	const HOMEPAGE_DISPLAY = 'homepage';
 	const CLASSIC_DISPLAY = 'classic';
 	const ARCHIVE_DISPLAY = 'archive';
+	
 	/**
 	 * @var news_NewsService
 	 */
@@ -24,7 +25,6 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		}
 		return self::$instance;
 	}
-	
 
 	/**
 	 * @return news_persistentdocument_news
@@ -112,7 +112,6 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		return $newsQuery;
 	}
 	
-
 	/**
 	 * Get the list of news attached to $docId. If $docId is null, we default to the module's root folder.
 	 *
@@ -259,7 +258,6 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	/**
 	 * @param news_persistentdocument_news $document
 	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
-	 * @return void
 	 */
 	protected function preSave($document, $parentNodeId)
 	{
@@ -417,14 +415,13 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @see f_persistentdocument_DocumentService::preDuplicate()
-	 *
 	 * @param f_persistentdocument_PersistentDocument $newDocument
 	 * @param f_persistentdocument_PersistentDocument $originalDocument
 	 * @param Integer $parentNodeId
 	 */
 	protected function preDuplicate($newDocument, $originalDocument, $parentNodeId)
 	{
-		//ALLOW duplicat news
+		// ALLOW duplicat news
 	}
 
 	/**
@@ -441,7 +438,9 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		return LinkHelper::getUrl($news->getLinkedpage());
 	}
 	
-
+	/**
+	 * @return task_persistentdocument_usertask[]
+	 */
 	public final function getPendingTasksForCurrentUser()
 	{
 		$newsModel = f_persistentdocument_PersistentDocumentModel::getInstance('news', 'news');
@@ -457,11 +456,9 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		$query->setMaxResults(50);
 		return $query->find();
 	}
-	
 
 	/**
 	 * @see f_persistentdocument_DocumentService::getResume()
-	 *
 	 * @param news_persistentdocument_news $document
 	 * @param string $forModuleName
 	 * @param array $allowedSections
@@ -476,5 +473,48 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		$data['properties']['endarchivedate'] = $document->getEndarchivedate();
 		return $data;
 	}
-
+	
+	// Tweets handling.
+	
+	/**
+	 * @param news_persistentdocument_news $document or null
+	 * @param integer $websiteId
+	 * @return array
+	 */
+	public function getReplacementsForTweet($document, $websiteId)
+	{
+		$label = array(
+			'name' => 'label',
+			'label' => f_Locale::translateUI('&modules.news.document.news.Label;'),
+			'maxLength' => 80
+		);
+		$shortUrl = array(
+			'name' => 'shortUrl', 
+			'label' => f_Locale::translateUI('&modules.twitterconnect.bo.general.Short-url;'),
+			'maxLength' => 30
+		);
+		if ($document !== null)
+		{
+			$label['value'] = f_util_StringUtils::shortenString($document->getLabel(), 80);
+			$shortUrl['value'] = website_ShortenUrlService::getInstance()->shortenUrl(LinkHelper::getDocumentUrl($document));
+		}
+		return array($label, $shortUrl);
+	}
+	
+	/**
+	 * @param blog_persistentdocument_post $document
+	 * @return f_persistentdocument_PersistentDocument[]
+	 */
+	public function getContainersForTweets($document)
+	{
+		$containers = array();
+		foreach ($this->getAncestorsOf($document) as $ancestor)
+		{
+			if ($ancestor instanceof website_persistentdocument_topic)
+			{
+				$containers[] = $ancestor;
+			}
+		}
+		return $containers;
+	}
 }
