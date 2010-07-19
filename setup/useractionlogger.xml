@@ -4,4 +4,6 @@
   <actiondef modulename="news" actionname="update.news" label="modules.news.bo.useractionlogger.update-news"/>
   <actiondef modulename="news" actionname="savepermissions.rootfolder" label="modules.news.bo.useractionlogger.savepermissions-rootfolder"/>
   <actiondef modulename="news" actionname="createworkflowinstance.news" label="modules.news.bo.useractionlogger.createworkflowinstance-news"/>
+  <actiondef modulename="news" actionname="update.rootfolder" label="modules.news.bo.useractionlogger.update-rootfolder"/>
+  <actiondef modulename="news" actionname="insert.news" label="modules.news.bo.useractionlogger.insert-news"/>
 </script>
