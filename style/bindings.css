@@ -1,0 +1,6 @@
+wdialog[template="ValidNews"]{
+	-moz-binding: url(binding:modules.news.cValidNewsDialog#cValidNewsDialog);
+}
+wdialog[template="ValidNews"] rows.cPageData{
+	-moz-binding: url(binding:modules.news.cValidNewsDialog#cPageData);
+}

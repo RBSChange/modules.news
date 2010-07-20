@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bindings xmlns="http://www.mozilla.org/xbl" 
+	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:xbl="http://www.mozilla.org/xbl">
+		
+	<binding id="cValidNewsDialog" extends="modules.task.cTaskDialog#cTaskDialog">
+		<implementation>		
+			<field name="title">"&amp;modules.news.bo.workflow.Valid-task-title;"</field>
+			<field name="description">"&amp;modules.news.bo.workflow.Valid-task-help;"</field>
+			<field name="loadDataModule">"news"</field>
+			<field name="loadDataAction">"LoadValidNewsData"</field>
+			<field name="documentSectionClass">"cPageData"</field>			
+		</implementation>		
+	</binding>
+	
+	<binding id="cPageData">
+		<implementation>
+			<constructor><![CDATA[
+				this.setHTML('text', this.getAttribute('text'));
+				this.setHTML('summary', this.getAttribute('summary'));
+				this.setHTML('place', this.getAttribute('place'));
+				this.setHTML('datetimeinfo', this.getAttribute('datetimeinfo'));
+				this.setHTML('contact', this.getAttribute('contact'));
+			]]></constructor>
+			
+			<method name="setHTML">
+				<parameter name="name" />
+				<parameter name="html" />
+				<body><![CDATA[
+					if (html != '')
+					{
+						var doc = new DOMParser().parseFromString('<div xmlns="http://www.w3.org/1999/xhtml">' + html + '</div>', 'text/xml');	
+						var elem = document.getAnonymousElementByAttribute(this, 'anonid', name);
+						elem.appendChild(doc.documentElement);	
+					}
+				]]></body>
+			</method>
+		</implementation>
+		<content>
+			<xul:row xbl:inherits="differs=labelDiffers">
+				<xul:label value="&amp;modules.news.document.news.Label;"/>
+				<xul:label xbl:inherits="value=label" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=dateDiffers">
+				<xul:label value="&amp;modules.news.document.news.Date;"/>
+				<xul:label xbl:inherits="value=date" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=summaryDiffers" anonid="summary">
+				<xul:label value="&amp;modules.news.document.news.Summary;"/>			
+			</xul:row>
+			<xul:row xbl:inherits="differs=textDiffers" anonid="text">
+				<xul:label value="&amp;modules.news.document.news.Text;"/>	
+			</xul:row>
+			<xul:row xbl:inherits="differs=linkedpageDiffers">
+				<xul:label value="&amp;modules.news.document.news.Linkedpage;"/>	
+				<xul:label xbl:inherits="value=linkedpage" />
+			</xul:row>	
+					
+			<xul:row xbl:inherits="differs=listvisualDiffers">
+				<xul:label value="&amp;modules.news.document.news.Listvisual;"/>	
+				<xul:label><xul:image xbl:inherits="src=listvisual" /></xul:label>
+			</xul:row>		
+			<xul:row xbl:inherits="differs=detailvisualDiffers">
+				<xul:label value="&amp;modules.news.document.news.Detailvisual;"/>	
+				<xul:label><xul:image xbl:inherits="src=detailvisual" /></xul:label>
+			</xul:row>
+			<xul:row xbl:inherits="differs=accessmapDiffers">
+				<xul:label value="&amp;modules.news.document.news.Accessmap;"/>	
+				<xul:label class="text-link" xbl:inherits="href=accessmap,value=accessmaplabel" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=attachmentDiffers">
+				<xul:label value="&amp;modules.news.document.news.Attachment;"/>	
+				<xul:label class="text-link" xbl:inherits="href=attachment,value=attachmentlabel" />
+			</xul:row>
+
+			<xul:row xbl:inherits="differs=placeDiffers" anonid="place">
+				<xul:label value="&amp;modules.news.document.news.Place;"/>	
+			</xul:row>			
+			<xul:row xbl:inherits="differs=datetimeinfoDiffers" anonid="datetimeinfo">
+				<xul:label value="&amp;modules.news.document.news.Datetimeinfo;"/>	
+			</xul:row>	
+			<xul:row xbl:inherits="differs=contactDiffers" anonid="contact">
+				<xul:label value="&amp;modules.news.document.news.Contact;"/>	
+			</xul:row>		
+
+			<xul:row xbl:inherits="differs=priorityDiffers">
+				<xul:label value="&amp;modules.news.document.news.Priority;"/>
+				<xul:label xbl:inherits="value=priority" />
+			</xul:row>						
+			<xul:row xbl:inherits="differs=startpublicationdateDiffers">
+				<xul:label value="&amp;modules.news.document.news.Startpublicationdate;"/>
+				<xul:label xbl:inherits="value=startpublicationdate" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=endpublicationdateDiffers">
+				<xul:label value="&amp;modules.news.document.news.Endpublicationdate;"/>
+				<xul:label xbl:inherits="value=endpublicationdate" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=endhomepagedate">
+				<xul:label value="&amp;modules.news.document.news.Endhomepagedate;"/>
+				<xul:label xbl:inherits="value=endhomepagedate" />
+			</xul:row>
+			<xul:row xbl:inherits="differs=endarchivedate">
+				<xul:label value="&amp;modules.news.document.news.Endarchivedate;"/>
+				<xul:label xbl:inherits="value=endarchivedate" />
+			</xul:row>
+		</content>
+	</binding>
+</bindings>
