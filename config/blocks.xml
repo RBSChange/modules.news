@@ -12,6 +12,8 @@
 			<meta name="title" allow="title,description" />
 			<meta name="resume" allow="title,description" />
 			<meta name="date" allow="title,description" />
+			<meta name="shortdate" allow="title,description" />
+			<meta name="datetime" allow="title,description" />
 		</metas>
 	</block>
 	<block type="modules_news_newsContextualList" display="type: classic; includechildren: true; visual: true; itemcount: -1; displayrsslink true;" icon="list-block" label="&amp;modules.news.bo.blocks.Contextual-news-list;"

@@ -50,12 +50,22 @@ class news_BlockNewsAction extends website_DetailBlockAction
 	function getMetas()
 	{
 		$news = $this->getDocumentParameter();
-		if ($news)
+		if ($news instanceof news_persistentdocument_news)
 		{
+			$uidate = date_Calendar::getInstance($news->getUIDate());
 			$format = f_Locale::translate('&framework.date.date.smart-full-short;');
-			$date = date_DateFormat::format(date_Calendar::getInstance($news->getDate()), $format);
-			return array("title" => $news->getLabel(), "resume" => f_util_StringUtils::htmlToText($news->getSummary()),
-			 "date" => $date);
+			$date = date_DateFormat::format($uidate, $format);
+			
+			$shortformat = f_Locale::translate('&framework.date.date.default-date-format;');
+			$shortdate = date_DateFormat::format($uidate, $shortformat);
+			
+			$datetimeformat = f_Locale::translate('&framework.date.date.default-datetime-format;');
+			$datetime = date_DateFormat::format($uidate, $datetimeformat);
+			
+			return array("title" => $news->getLabel(), 
+				"resume" => f_util_StringUtils::htmlToText($news->getSummary()),
+			 	"date" => $date, "shortdate" => $shortdate, "datetime" => $datetime);
 		}
+		return array();
 	}
 }

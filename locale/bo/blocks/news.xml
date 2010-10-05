@@ -52,4 +52,10 @@
   <entity id="metas.date">
     <locale lang="fr">Date de l'actualité courante</locale>
   </entity>
+  <entity id="metas.shortdate">
+    <locale lang="fr">Date abrégé de l'actualité courante</locale>
+  </entity>
+  <entity id="metas.datetime">
+    <locale lang="fr">Date et heure abrégé de l'actualité courante</locale>
+  </entity>
 </localization>
