@@ -1,4 +1,4 @@
-<p tal:condition="container" change:create="" model="news/news" parentId="${container/getId}"><tal:block change:translate="&modules.news.frontoffice.Create-new-in-topic; containerLabel container/getLabel">Créer une actualité dans la rubrique ${container/getLabel}</tal:block></p>
+<p tal:condition="container" change:create="" model="news/news" parentId="${container/getId}" change:translate="&modules.news.frontoffice.Create-new-in-topic"></p>
 
 <div change:include="module 'news'; template 'News-Inc-Mininav'; type 'html'; listPage listPage; archivePage archivePage; hasFeed hasFeed; containerId containerId; hasList hasList; hasArchive hasArchive; siblingId siblingId; displayrsslink displayrsslink" />
 
