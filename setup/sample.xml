@@ -6,7 +6,7 @@
 	
 	<website byTag="default_modules_website_default-website" template="webfactory/tplTwo">
 		<topic label="Actualités" id="newstopic">
-			<page label="Liste des actualités" isIndexPage="true" indexingstatus="false">
+			<page label="Liste des actualités" isIndexPage="true" navigationVisibility="hidden" indexingstatus="false">
 				<tag name="functional_news_news-list" />
 				<changecontent for="content-block">
 					<changeblock type="modules_news_newsContextualList" />
