@@ -433,9 +433,9 @@ class news_NewsService extends f_persistentdocument_DocumentService
 	{
 		if ($news->getLinkedpage() === null)
 		{
-			return LinkHelper::getUrl($news);
+			return LinkHelper::getDocumentUrl($news);
 		}
-		return LinkHelper::getUrl($news->getLinkedpage());
+		return LinkHelper::getDocumentUrl($news->getLinkedpage());
 	}
 	
 	/**

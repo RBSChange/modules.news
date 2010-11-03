@@ -38,7 +38,7 @@ class news_ViewFeedAction extends news_Action
 			$pageId = $request->getParameter(K::PARENT_ID_ACCESSOR);
 		}
 		$page = DocumentHelper::getDocumentInstance($pageId);
-		$feedURL = LinkHelper::getUrl($page);
+		$feedURL = LinkHelper::getDocumentUrl($page);
 		$description = $prefs->getRssfeeddescription();
 		if (is_null($description))
 		{
