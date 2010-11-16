@@ -60,7 +60,7 @@ class news_ViewFeedAction extends news_Action
 		return false;
 	}
 	
-	protected function suffixSecureActionByDocument()
+	protected function isDocumentAction()
 	{
 		return false;
 	}

@@ -86,7 +86,7 @@ class news_ViewListAction extends news_Action
 	/**
 	 * @return Boolean
 	 */
-	protected function suffixSecureActionByDocument()
+	protected function isDocumentAction()
 	{
 		return true;
 	}
