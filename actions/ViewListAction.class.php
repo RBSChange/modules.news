@@ -53,7 +53,8 @@ class news_ViewListAction extends news_Action
 	{
 		try
 		{
-			return $this->getDocumentService()->getDocumentByContextualTag('contextual_website_website_modules_news_page-'.$this->getTagSuffix(), website_WebsiteModuleService::getInstance()->getCurrentWebsite());
+			$website = website_WebsiteModuleService::getInstance()->getCurrentWebsite();
+			return TagService::getInstance()->getDocumentByContextualTag('contextual_website_website_modules_news_page-'.$this->getTagSuffix(), $website);
 		}
 		catch (TagException $e)
 		{
