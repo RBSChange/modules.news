@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.workflow" lcid="fr_FR">
+  <key id="valid-task-title">Validation d'une actualité</key>
+  <key id="acceptbutton">Accepter</key>
+  <key id="refusebutton">Refuser</key>
+  <key id="user-task-decision-commentary">Commentaire</key>
+  <key id="endpublicationdatehome">Fin de de publication en page d'accueil</key>
+  <key id="endpublicationdatearchive">Fin de de publication en page d'archive</key>
+</i18n>

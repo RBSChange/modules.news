@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.errors" lcid="en_GB">
+  <key id="modules-news-getpreferencesdocument">you don't have the appropriate permission to perform this operation : ″Open preferences window″</key>
+  <key id="modules-news-move-rootfolder">you don't have the appropriate permission to perform this operation : ″Add a topic″</key>
+  <key id="modules-news-remove-topic">you don't have the appropriate permission to perform this operation : ″Remove a topic″</key>
+  <key id="modules-news-editlocale">you don't have the appropriate permission to perform this operation : ″Edit a locale″</key>
+  <key id="modules-news-order">you don't have the appropriate permission to perform this operation : ″Sort out the elements″</key>
+  <key id="modules-news-getdialogtopictree">you don't have the appropriate permission to perform this operation : ″Open window dialog topic tree″</key>
+  <key id="modules-news-activate-news">you don't have the appropriate permission to perform this operation : ″Activate a news″</key>
+  <key id="modules-news-cancel-news">you don't have the appropriate permission to perform this operation : ″Cancel a news″</key>
+  <key id="modules-news-enabled">you don't have the appropriate permission to perform this operation : ″Access to the module″</key>
+  <key id="invalid-duration">This duration is not valid</key>
+</i18n>

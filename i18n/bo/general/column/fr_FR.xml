@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.general.column" lcid="fr_FR">
+  <key id="specialvisibility">Type d'affichage</key>
+  <key id="startpub">date de début de parution</key>
+  <key id="endpub">date de fin de parution</key>
+</i18n>

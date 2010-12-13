@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.errors" lcid="fr_FR">
+  <key id="modules-news-getpreferencesdocument">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ouvrir les préférences″</key>
+  <key id="modules-news-move-rootfolder">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ajouter une rubrique″</key>
+  <key id="modules-news-remove-topic">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Retirer une rubrique″</key>
+  <key id="modules-news-editlocale">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Editer une locale″</key>
+  <key id="modules-news-order">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Modifier l'ordre des éléments″</key>
+  <key id="modules-news-getdialogtopictree">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ouvrir la fenêtre de gestion des rubriques″</key>
+  <key id="modules-news-activate-news">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Activer une actualité″</key>
+  <key id="modules-news-cancel-news">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Annuler une actualité″</key>
+  <key id="modules-news-enabled">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Accès au module″</key>
+  <key id="invalid-duration">La durée saisie est invalide</key>
+</i18n>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.workflow" lcid="de_DE">
+  <key id="valid-task-title">Freigabe einer Aktualität</key>
+  <key id="acceptbutton">Übernehmen</key>
+  <key id="refusebutton">Ablehnen</key>
+  <key id="user-task-decision-commentary">Kommentar</key>
+  <key id="endpublicationdatehome">Enddatum der Veröffentlichung auf der Startseite</key>
+  <key id="endpublicationdatearchive">Enddatum der Veröffentlichung auf der Archivseite</key>
+</i18n>

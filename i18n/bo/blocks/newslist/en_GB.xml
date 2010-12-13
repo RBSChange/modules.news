@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.newslist" lcid="en_GB">
+  <key id="visual">display pictures</key>
+  <key id="visual-help">display pictures</key>
+  <key id="itemcount">number of news</key>
+  <key id="itemcount-help">to view all news, type -1</key>
+  <key id="type">display type</key>
+  <key id="type-help">display type</key>
+  <key id="timeordered">display ordering</key>
+  <key id="timeordered-help">display ordering</key>
+  <key id="includechildren">include sub-folders/topics</key>
+  <key id="includechildren-help">display news from sub-topics</key>
+  <key id="displayrsslink">display RSS link</key>
+  <key id="displayrsslink-help">display RSS link</key>
+</i18n>

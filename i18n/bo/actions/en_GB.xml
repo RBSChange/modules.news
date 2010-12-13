@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.actions" lcid="en_GB">
+  <key id="create-news">create a news</key>
+  <key id="create_">create...</key>
+  <key id="previewnews">preview news</key>
+</i18n>

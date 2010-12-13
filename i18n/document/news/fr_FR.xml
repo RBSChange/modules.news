@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.document.news" lcid="fr_FR">
+  <key id="document-name">actualité</key>
+  <key id="label">titre</key>
+  <key id="label-help">titre de l'actualité</key>
+  <key id="startpublicationdate">date de début de parution</key>
+  <key id="startpublicationdate-help">date de début de parution de l'actualité sur le site internet</key>
+  <key id="endpublicationdate">date de fin de parution</key>
+  <key id="endpublicationdate-help">date de fin de parution de l'actualité sur le site internet</key>
+  <key id="endhomepagedate">fin de parution en page d'accueil</key>
+  <key id="endhomepagedate-help">date de fin de parution de l'actualité en page d'accueil sur le site internet</key>
+  <key id="endarchivedate">fin de parution dans les archives</key>
+  <key id="endarchivedatee-help">date de fin de parution dans les archives</key>
+  <key id="date">date</key>
+  <key id="date-help">date</key>
+  <key id="summary">résumé</key>
+  <key id="summary-help">résumé court de l'actualité</key>
+  <key id="contextualdocument">site ou rubrique associée</key>
+  <key id="contextualdocument-help">site ou rubrique associée</key>
+  <key id="text">contenu</key>
+  <key id="text-help">contenu textuel de l'actualité</key>
+  <key id="linkedpage">page liée</key>
+  <key id="linkedpage-help">page du site liée à l'actualité</key>
+  <key id="listvisual">visuel pour l'affichage en liste</key>
+  <key id="listvisual-help">visuel pour l'affichage en liste</key>
+  <key id="detailvisual">visuel pour l'affichage détail</key>
+  <key id="detailvisual-help">visuel pour l'affichage détail</key>
+  <key id="place">lieu</key>
+  <key id="place-help">dans le cadre d'un événement (spectacle, sortie pédestre, invitation...), vous pouvez indiquer ici le lieu de cet événement.</key>
+  <key id="accessmap">plan d'accès</key>
+  <key id="accessmap-help">dans le cadre d'un événement (spectacle, sortie pédestre, invitation...), vous pouvez indiquer ici un fichier issu du module Mediathèque représentant le plan d'accès ou l'itinéraire.</key>
+  <key id="accessmap-more-help">veillez à correctement décrire le plan d'accès ou l'itinéraire dans le champ Lieu ci-dessus : le champ Plan d'accès ne doit être qu'une illustration visuelle.</key>
+  <key id="contact">contact</key>
+  <key id="contact-help">
+			vous pouvez indiquer ici des informations complémentaires pour aider les internautes à prendre contact à propos de cette actualité. Par exemple, si l'actualité concerne une sortie pédestre, il serait intéressant de fournir ici les coordonnées des organisateurs pour permettre aux
+			internautes de s'inscrire.
+		</key>
+  <key id="attachment">fichier joint</key>
+  <key id="attachment-help">permet de joindre un fichier du module Mediathèque à l'actualité. Les internautes pourront télécharger ce fichier.</key>
+  <key id="datetimeinfo">date et horaire</key>
+  <key id="datetimeinfo-help">dans le cadre d'un événement (spectacle, sortie pédestre, invitation...), vous pouvez indiquer ici la date et l'horaire de l'événement</key>
+  <key id="priority">priorité d'affichage</key>
+  <key id="priority-help">pour des actualités ayant la même date, ce champ permet de classer de manière fine les actualités dans les listes. 10 est la priorité la plus élevée, 1 est la moins élevée.</key>
+  <key id="isarchive">isarchive</key>
+  <key id="isarchive-help">isarchive</key>
+  <key id="homepagevisibility">homepagevisibility</key>
+  <key id="homepagevisibility-help">homepagevisibility</key>
+  <key id="archive-duration">durée de parution dans les archives</key>
+  <key id="homepagevisibility-duration">durée de parution sur la page d'accueil</key>
+  <key id="weeks">semaine(s)</key>
+  <key id="months">mois</key>
+  <key id="years">année(s)</key>
+  <key id="publication-parameters-archive">paramètres d'archivage</key>
+  <key id="startarchivedate">Date d'archivage de l'actualité</key>
+  <key id="startarchivedate-help">Date à laquelle l'actualité ne sera visible que dans la section archive</key>
+  <key id="publication-parameters">paramètres de publication</key>
+  <key id="publication">publication</key>
+  <key id="visual">fichiers</key>
+  <key id="generalities">Général</key>
+  <key id="information-date">date et lieu</key>
+  <key id="information-contact">contact</key>
+  <key id="endarchivedate-help">endarchivedate</key>
+  <key id="frontpageduration">durée d'affichage en page d'accueil</key>
+  <key id="frontpageduration-help">durée d'affichage en page d'accueil</key>
+  <key id="archiveduration">durée d'affichage dans les archives</key>
+  <key id="archiveduration-help">durée d'affichage dans les archives</key>
+  <key id="uselinkedpage">utiliser une page de contenu</key>
+  <key id="uselinkedpage-help">page de contenu qui servira de page de détail de l'actualité</key>
+  <key id="news-title-groupbox">titre et date</key>
+  <key id="news-summary-groupbox">résumé et thème</key>
+  <key id="news-text-groupbox">contenu</key>
+  <key id="news-info-groupbox">Lieu, horaire, contact</key>
+  <key id="news-downloads-groupbox">Fichiers attachés</key>
+  <key id="archivepage">Archive</key>
+  <key id="homepage">Accueil</key>
+</i18n>

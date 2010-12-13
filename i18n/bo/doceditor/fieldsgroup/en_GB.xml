@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.doceditor.fieldsgroup" lcid="en_GB">
+  <key id="visuals">pictures</key>
+  <key id="misc">additional informations</key>
+  <key id="publication">publication settings</key>
+</i18n>

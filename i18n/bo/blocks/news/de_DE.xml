@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.news" lcid="de_DE">
+  <key id="compact">Kompaktanzeige</key>
+  <key id="compact-help">Kompaktanzeige</key>
+  <key id="linktoallnews">Link zu allen Aktualitäten</key>
+  <key id="linktoallnews-help">den Link zur Liste aller Aktualitäten der Webseite anzeigen oder nicht. Es handelt sich um die getaggte Seite ″Liste 
+		der Aktualitäten der Webseite″.</key>
+  <key id="linktonewsfromsametopic">Link zu den Aktualitäten der Rubrik</key>
+  <key id="linktonewsfromsametopic-help">den Link zur Liste der Rubrik anzeigen oder nicht. Es handelt sich um die getaggte Seite ″Liste der Aktualitäten der 
+		Rubrik″.</key>
+  <key id="linksposition">Position der Links</key>
+  <key id="linksposition-help">Bestimmt den Ort der Links ″Alle Aktualitäten anzeigen″ und ″Aktualitäten der Rubrik anzeigen″. Ist keiner der Links 
+		angezeigt, ist diese Einstellung unwichtig.</key>
+</i18n>

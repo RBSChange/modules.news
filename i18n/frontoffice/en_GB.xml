@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.frontoffice" lcid="en_GB">
+  <key id="news">news</key>
+  <key id="detail-datetimeinfo">schedule</key>
+  <key id="detail-place">place</key>
+  <key id="detail-accessmap">access map</key>
+  <key id="detail-contact">contact</key>
+  <key id="detail-attachment">attached file</key>
+  <key id="detail-backlink">back to news list</key>
+  <key id="list-link">see all news</key>
+  <key id="archive-link">see the archives</key>
+  <key id="list-detail-links">see details</key>
+  <key id="list-archives">archives</key>
+  <key id="rss-link">RSS feed</key>
+  <key id="error-no-preferences">please set the preferences of modules news first!</key>
+  <key id="default-feed-description">{label}'s RSS Feed</key>
+  <key id="news-not-found">the news you are trying to access does not (or no longer) exist (identifier {id})!</key>
+  <key id="empty-archive-list">no archives available.</key>
+  <key id="all-news">view all news</key>
+  <key id="news-in-the-same-topic">view news in this topic</key>
+  <key id="create-new-in-topic">create a news in this topic</key>
+</i18n>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.tags" lcid="de_DE">
+  <key id="news-detail">Detailseite der Rubrikaktualitäten</key>
+  <key id="news-archive">Archive der Rubrikaktualitäten</key>
+  <key id="news-list">Liste der Rubrikaktualitäten</key>
+  <key id="website-detail">Detailseite der Aktualitäten für die Webseite</key>
+  <key id="website-archive">Archive der Webseitenaktualitäten</key>
+  <key id="website-list">Liste der Webseitenaktualitäten</key>
+</i18n>

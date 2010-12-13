@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.document.preferences" lcid="de_DE">
+  <key id="edition-form-title">Einstellungen Modul Aktualitäten</key>
+  <key id="display-spaced"> Einstellungen Anzeige</key>
+  <key id="itemperpage">Anzahl Aktualitäten pro Seite</key>
+  <key id="itemperpage-help">Sind mehrere Seiten für die Anzeige der Aktualitätenliste nötig, bestimmt der Wert dieses Feldes die Anzahl der angezeigten 
+	Aktualitäten pro Seite.</key>
+  <key id="listvisualposition">Bilderposition</key>
+  <key id="listvisualposition-help">Wird eine Aktualitätenliste angezeigt, bestimmt der Wert dieses Feld die Bildposition der Aktualitäten.</key>
+  <key id="homepagetemplate">Startseitenskin</key>
+  <key id="homepagetemplate-help">Auswahl des Skins für die Startseitenanzeige der Aktualitätenliste.</key>
+  <key id="onecol">eine Spalte</key>
+  <key id="twocol">zwei Spalten</key>
+  <key id="leftfirst">erste Aktualität links</key>
+  <key id="left-visual">links</key>
+  <key id="right-visual">rechts</key>
+  <key id="alternate-visual">abwechselnd</key>
+  <key id="rss-spaced"> RSS-Feed</key>
+  <key id="rssfeedtitle">RSS-Feed-Titel</key>
+  <key id="rssfeedtitle-help">dieses Feld bestimmt den Titel des RSS-Feeds einer Aktualitätenliste.</key>
+  <key id="rssfeedurl">mit dem RSS-Feed verbundene URL</key>
+  <key id="rssfeedurl-help">dieses Feld bestimmt die mit dem RSS-Feed verbundene Adresse der Aktualitätenliste.</key>
+  <key id="rssfeeddescription">RSS-Feed Beschreibung</key>
+  <key id="rssfeeddescription-help">dieses Feld bestimmt die Beschreibung des RSS-Feeds einer Aktualitätenliste.</key>
+  <key id="rssitemcount">Anzahl Elemente des RSS-Feeds</key>
+  <key id="rssitemcount-help">dieses Feld bestimmt die Anzahl der maximal angezeigten Elemente pro RSS-Feed des Moduls Aktualitäten.</key>
+  <key id="referencing-spaced"> Referenzierung</key>
+  <key id="detailtitle">Titel der Detailseite</key>
+  <key id="detailtitle-help">dieses Feld bestimmt den Wert des Meta-Tags 'title' der Detailseite einer Aktualität. Enthält das Feld die Worte TITEL, 
+	ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</key>
+  <key id="detaildescription">Beschreibung der Detailseite</key>
+  <key id="detaildescription-help">dieses Feld bestimmt den Wert des Meta-Tags 'description' der Detailseite einer Aktualität. Enthält das Feld die Worte TITEL, 
+	ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</key>
+  <key id="detailkeywords">Stichwörter der Detailseite</key>
+  <key id="detailkeywords-help">dieses Feld bestimmt den Wert des Meta-Tags 'keywords' der Detailseite einer Aktualität und muss durch Kommata getrennte 
+	Worte enthalten. Enthält das Feld die Worte TITEL, ZUSAMMENFASSUNG oder DATUM, werden diese automatisch durch die entsprechenden Titel, Zusammenfassung und Datum der entsprechenden Aktualität 
+	ersetzt.</key>
+  <key id="previewpage">Vorschauseite</key>
+  <key id="previewpage-help">Setzen Sie durch Drag-and-drop eine Seite der Webseite ein, die einen Block 'Aktualitätendetail' enthält, um die Funktion 
+	der Aktualitätenvorschau nutzen zu können.</key>
+</i18n>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.topic" lcid="fr_FR">
+  <key id="visual">afficher les visuels</key>
+  <key id="visual-help">afficher les visuels</key>
+  <key id="itemcount">nombre d'actualités</key>
+  <key id="itemcount-help">pour afficher toutes les actualités, saisir -1</key>
+  <key id="type">type d'affichage</key>
+  <key id="type-help">type d'affichage pour le rendu</key>
+  <key id="timeordered">ordre d'affichage</key>
+  <key id="timeordered-help">ordre d'affichage</key>
+  <key id="includechildren">inclure les sous-dossiers/rubriques</key>
+  <key id="includechildren-help">afficher les actualités présentes dans les sous-rubriques</key>
+  <key id="displayrsslink">afficher le lien RSS</key>
+  <key id="displayrsslink-help">afficher le lien RSS</key>
+</i18n>

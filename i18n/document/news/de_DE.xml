@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.document.news" lcid="de_DE">
+  <key id="document-name">Aktualität</key>
+  <key id="label">Titel</key>
+  <key id="label-help">Titel</key>
+  <key id="startpublicationdate">Anfangsdatum der Veröffentlichung</key>
+  <key id="startpublicationdate-help">Anfangsdatum der Veröffentlichung der Aktualität auf der Webseite</key>
+  <key id="endpublicationdate">Enddatum der Veröffentlichung</key>
+  <key id="endpublicationdate-help">Enddatum der Veröffentlichung der Aktualität auf der Webseite</key>
+  <key id="endhomepagedate">endhomepagedate</key>
+  <key id="endhomepagedate-help">endhomepagedate</key>
+  <key id="endarchivedate">endarchivedate</key>
+  <key id="date">Datum</key>
+  <key id="date-help">Datum</key>
+  <key id="summary">Zusammenfassung</key>
+  <key id="summary-help">kurze Zusammenfassung der Aktualität</key>
+  <key id="contextualdocument">verbundene Webseite oder Rubrik</key>
+  <key id="contextualdocument-help">verbundene Webseite oder Rubrik</key>
+  <key id="text">Inhalt</key>
+  <key id="text-help">Textinhalt der Aktualität</key>
+  <key id="linkedpage">verbundene Seite</key>
+  <key id="linkedpage-help">mit der Aktualität verbundene Webseite</key>
+  <key id="listvisual">Bild für Anzeige als Liste</key>
+  <key id="listvisual-help">Bild für Anzeige als Liste</key>
+  <key id="detailvisual">Bild für Detailanzeige</key>
+  <key id="detailvisual-help">Bild für Detailanzeige</key>
+  <key id="place">Ort</key>
+  <key id="place-help">für ein Ereignis (Vorstellung, Ausflug, Einladung...), können Sie hier einen Ort angeben.</key>
+  <key id="accessmap">Zugangsplan</key>
+  <key id="accessmap-help">für ein Ereignis (Vorstellug, Ausflug, Einladung...), können Sie hier eine Datei aus dem Modul Mediathek einfügen, die als 
+	Zugangsplan oder als Wegbeschreibung dient.</key>
+  <key id="accessmap-more-help">Bitte beschreiben Sie den Zugangsplan oder die Wegbeschreibung sorgfältig im oben angezeigten Ort Feld: das Feld Zugangsplan 
+	soll ausschliesslich eine visuelle Illustration beinhalten.</key>
+  <key id="contact">Kontakt</key>
+  <key id="contact-help">Sie können hier die zusätzlichen Informationen angeben, die den Benutzern zur Kontaktaufnahme bezüglich dieser Aktualität 
+	verhelfen.</key>
+  <key id="attachment">Anhang</key>
+  <key id="attachment-help">ermöglicht der Aktualität eine Datei aus dem Modul Mediathek anzuhängen. Die Benutzer werden diese Datei herunterladen 
+	können.</key>
+  <key id="datetimeinfo">Datum und Uhrzeit</key>
+  <key id="datetimeinfo-help">für ein Ereignis (Vorstellung, Ausflug, Einladung...), können Sie hier das Datum und die Uhrzeit des Ereignisses angeben.</key>
+  <key id="priority">Anzeigepriorität</key>
+  <key id="priority-help">für Aktualitäten mit gleichem Datum, ermöglicht dieses Feld die Aktualitäten in den Listen schlau zu ordnen. 10 ist die 
+	höchste Priorität, 1 ist die niedrigste.</key>
+  <key id="isarchive">isarchive</key>
+  <key id="isarchive-help">isarchive</key>
+  <key id="homepagevisibility">homepagevisibility</key>
+  <key id="homepagevisibility-help">homepagevisibility</key>
+  <key id="archive-duration">Veröffentlichungsdauer in den Archiven</key>
+  <key id="homepagevisibility-duration">Veröffentlichungsdauer auf der Startseite</key>
+  <key id="weeks">Woche(n)</key>
+  <key id="months">Monat(e)</key>
+  <key id="years">Jahr(e)</key>
+  <key id="publication-parameters-archive">Archivierungsparameter</key>
+  <key id="startarchivedate">Archivierungsdatum der Aktualität</key>
+  <key id="startarchivedate-help">Datum an dem die Aktualität ausschliesslich in der Archivabteilung sichtbar sein wird</key>
+  <key id="publication-parameters">Veröffentlichungseinstellungen</key>
+  <key id="publication">Veröffentlichung</key>
+  <key id="visual">Dateien</key>
+  <key id="generalities">Allgemein</key>
+  <key id="information-date">Datum und Ort</key>
+  <key id="information-contact">Kontakt</key>
+  <key id="endarchivedate-help">endarchivedate</key>
+  <key id="archiveduration">archiveduration</key>
+  <key id="archiveduration-help">archiveduration</key>
+  <key id="news-title-groupbox">Titel und Datum</key>
+  <key id="news-summary-groupbox">Zusammenfassung und Thema</key>
+  <key id="news-text-groupbox">Inhalt</key>
+  <key id="news-info-groupbox">Ort, Uhrzeit und Kontakt</key>
+  <key id="news-downloads-groupbox">Anhänge</key>
+  <key id="archivepage">Archiv</key>
+  <key id="homepage">Startseite</key>
+</i18n>

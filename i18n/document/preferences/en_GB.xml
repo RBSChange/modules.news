@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.document.preferences" lcid="en_GB">
+  <key id="edition-form-title">module news preferences</key>
+  <key id="display-spaced"> Display properties</key>
+  <key id="itemperpage">number of news per page</key>
+  <key id="itemperpage-help">when several pages are needed to display a news list, the value of this field is used to determine the number of news per page.</key>
+  <key id="listvisualposition">image position</key>
+  <key id="listvisualposition-help">when a news list is displayed, this field sets the position of the news' image.</key>
+  <key id="homepagetemplate">homepage template</key>
+  <key id="homepagetemplate-help">template used for the homepage news list display.</key>
+  <key id="onecol">one column</key>
+  <key id="twocol">two columns</key>
+  <key id="leftfirst">first news left</key>
+  <key id="left-visual">to the left</key>
+  <key id="right-visual">to the right</key>
+  <key id="alternate-visual">alternating</key>
+  <key id="rss-spaced"> RSS feed</key>
+  <key id="rssfeedtitle">RSS feed title</key>
+  <key id="rssfeedtitle-help">this field sets the title of a news list's RSS feed.</key>
+  <key id="rssfeedurl">URL associated to the RSS feed</key>
+  <key id="rssfeedurl-help">this field sets the URL associated to a news list's RSS feed.</key>
+  <key id="rssfeeddescription">RSS feed description</key>
+  <key id="rssfeeddescription-help">this field sets the description of a news list's RSS feed.</key>
+  <key id="rssitemcount">RSS feed item count</key>
+  <key id="rssitemcount-help">this field sets the maximum number of items displayed by the module's RSS feed</key>
+  <key id="referencing-spaced"> Referencing</key>
+  <key id="detailtitle">detail page title</key>
+  <key id="detailtitle-help">this field sets the value of the 'title' meta tag of a news' detail page. Any occurence of TITLE, SUMMARY or DATE will be automatically replaced by the title, summary, and
+			date of the news displayed</key>
+  <key id="detaildescription">detail page description</key>
+  <key id="detaildescription-help">this field sets the value of the 'description' meta tag of a news' detail page. Any occurence of TITLE, SUMMARY or DATE will be automatically replaced by the title, summary,
+			and date of the news displayed</key>
+  <key id="detailkeywords">detail page keywords</key>
+  <key id="detailkeywords-help">this field sets the value of the 'keywords' meta tag of a news' detail page and should contain comma-separated words only. Any occurence of TITLE, SUMMARY or DATE will be
+			automatically replaced by the title, summary, and date of the news displayed</key>
+  <key id="previewpage">preview page</key>
+  <key id="previewpage-help">drang and drop a page containing a ″News detail″ block to use the 'preview news' function.</key>
+  <key id="display">display</key>
+  <key id="referencing">SEO</key>
+  <key id="rss">RSS feeds</key>
+</i18n>

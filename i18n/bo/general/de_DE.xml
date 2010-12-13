@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.general" lcid="de_DE">
+  <key id="module-name">Aktualitäten</key>
+  <key id="tree-root-name">Aktualitäten</key>
+  <key id="system-folder-name">Aktualitäten</key>
+  <key id="classic-display">Klassiche Anzeige</key>
+  <key id="homepage-display">Anzeige der Startseite</key>
+  <key id="archive-display">Anzeige Archive</key>
+  <key id="achrono-display">vom aktuellsten zum ältesten</key>
+  <key id="chrono-display">vom ältesten zum aktuellsten</key>
+  <key id="nopreviewpage">keine Vorschauseite bestimmt!</key>
+  <key id="nopreviewpagetext">bitte füllen Sie das Feld 'Vorschauseite' der Präferenzen des Moduls Aktualitäten.</key>
+  <key id="position-both">nach oben und nach unten</key>
+  <key id="position-top">nach oben</key>
+  <key id="position-bottom">nach unten</key>
+</i18n>

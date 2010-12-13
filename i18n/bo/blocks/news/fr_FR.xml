@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.news" lcid="fr_FR">
+  <key id="compact">Affichage compact</key>
+  <key id="compact-help">Affichage compact</key>
+  <key id="linktoallnews">lien vers toutes les actualités</key>
+  <key id="linktoallnews-help">afficher ou non le lien menant à la liste de toutes les actualités du site. Il s'agit de la page tagguée ″Liste des actualités du site″.</key>
+  <key id="linktonewsfromsametopic">lien vers les actualités de la rubrique</key>
+  <key id="linktonewsfromsametopic-help">afficher ou non le lien menant à la liste des de la rubrique. Il s'agit de la page tagguée ″Liste des actualités de la rubrique″.</key>
+  <key id="linksposition">position des liens</key>
+  <key id="linksposition-help">détermine où les liens ″Voir toutes les actualités″ et ″Voir les actualités de la rubrique″ sont affichés. Si aucun des liens n'est affiché, ce paramètres est sans importance.</key>
+</i18n>

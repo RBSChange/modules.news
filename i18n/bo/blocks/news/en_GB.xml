@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.news" lcid="en_GB">
+  <key id="compact">Compact view</key>
+  <key id="compact-help">Compact view</key>
+  <key id="linktoallnews">display link to all news</key>
+  <key id="linktoallnews-help">linktoallnews-help</key>
+  <key id="linktonewsfromsametopic">display link to news in the same topic</key>
+  <key id="linktonewsfromsametopic-help">linktonewsfromsametopic</key>
+  <key id="linksposition">links position</key>
+  <key id="linksposition-help">linktonewsfromsametopic</key>
+</i18n>

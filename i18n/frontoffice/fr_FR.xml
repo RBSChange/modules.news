@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.frontoffice" lcid="fr_FR">
+  <key id="news">actualités</key>
+  <key id="detail-datetimeinfo">date et horaire</key>
+  <key id="detail-place">lieu</key>
+  <key id="detail-accessmap">plan d'accès</key>
+  <key id="detail-contact">contact</key>
+  <key id="detail-attachment">fichier joint</key>
+  <key id="detail-backlink">revenir à la liste des actualités</key>
+  <key id="list-link">voir toutes les actualités</key>
+  <key id="archive-link">voir les archives</key>
+  <key id="list-detail-links">en savoir plus</key>
+  <key id="list-archives">archives</key>
+  <key id="rss-link">flux RSS</key>
+  <key id="error-no-preferences">veuillez d'abord régler les préférences du module actualité!</key>
+  <key id="default-feed-description">flux rss de {label}</key>
+  <key id="news-not-found">l'actualité que vous souhaitez visualiser n'existe pas ou n'existe plus (identifiant {id})!</key>
+  <key id="empty-archive-list">aucune archive n'est disponible.</key>
+  <key id="all-news">voir toutes les actualités</key>
+  <key id="news-in-the-same-topic">voir les actualités de la rubrique</key>
+  <key id="create-new-in-topic">créer une nouvelle actualité dans la rubrique</key>
+</i18n>

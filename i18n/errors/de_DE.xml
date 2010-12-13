@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.errors" lcid="de_DE">
+  <key id="modules-news-getpreferencesdocument">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″Präferenzen öffnen″</key>
+  <key id="modules-news-move-rootfolder">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″Rubrik hinzufügen″</key>
+  <key id="modules-news-remove-topic">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″eine Rubrik entfernen″</key>
+  <key id="modules-news-editlocale">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″eine Lokale bearbeiten″</key>
+  <key id="modules-news-order">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″Reihenfolge der Elemente ändern″</key>
+  <key id="modules-news-getdialogtopictree">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″Verwaltungsfenster der Rubriken öffnen″</key>
+  <key id="modules-news-activate-news">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″eine Aktualität aktivieren″</key>
+  <key id="modules-news-cancel-news">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″eine Aktualität annullieren″</key>
+  <key id="modules-news-enabled">Sie besitzen nicht die Rechte folgende Aktion auszuführen: ″Zugang zum Modul″</key>
+</i18n>

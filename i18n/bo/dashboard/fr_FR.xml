@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.dashboard" lcid="fr_FR">
+  <key id="news-validation">Actualités à valider</key>
+  <key id="task-label-validate">{author} vous demande de publier l'actualité : </key>
+  <key id="no-news-to-validate">Il n'y a pas d'actualité à valider.</key>
+</i18n>

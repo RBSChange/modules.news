@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks.newscontextuallist" lcid="de_DE">
+  <key id="visual">Bilder anzeigen</key>
+  <key id="visual-help">Bilder anzeigen</key>
+  <key id="itemcount">Anzahl Aktualitäten</key>
+  <key id="itemcount-help">um alle Aktualitäten anzuzeigen, erfassen Sie -1</key>
+  <key id="type">Anzeigeart</key>
+  <key id="type-help">Anzeigeart für das Ergebnis</key>
+  <key id="timeordered">Reihenfolge der Anzeige</key>
+  <key id="timeordered-help">Reihenfolge der Anzeige</key>
+  <key id="includechildren">Unterordner/-rubriken eincshliessen</key>
+  <key id="includechildren-help">in den Unterrubriken vorhandene Aktualitäten anzeigen</key>
+  <key id="displayrsslink">den RSS Link anzeigen</key>
+  <key id="displayrsslink-help">den RSS Link anzeigen</key>
+</i18n>

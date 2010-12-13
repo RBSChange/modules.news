@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.useractionlogger" lcid="fr_FR">
+  <key id="update-news">update.news {lang} {documentlabel}</key>
+  <key id="log-update-news">log-update-news</key>
+  <key id="savepermissions-rootfolder">savepermissions.rootfolder {documentlabel}</key>
+  <key id="log-savepermissions-rootfolder">log-savepermissions-rootfolder</key>
+  <key id="createworkflowinstance-news">createworkflowinstance.news {START_COMMENT} {lang} {documentlabel}</key>
+  <key id="log-createworkflowinstance-news">log-createworkflowinstance-news</key>
+  <key id="update-rootfolder">update.rootfolder {documentlabel}</key>
+  <key id="log-update-rootfolder">log-update-rootfolder</key>
+  <key id="insert-news">insert.news {lang} {documentlabel}</key>
+  <key id="log-insert-news">log-insert-news</key>
+  <key id="activate-news">activate.news {lang} {documentlabel}</key>
+  <key id="log-activate-news">log-activate-news</key>
+  <key id="deactivated-news">deactivated.news {lang} {documentlabel}</key>
+  <key id="log-deactivated-news">log-deactivated-news</key>
+  <key id="reactivate-news">reactivate.news {lang} {documentlabel}</key>
+  <key id="log-reactivate-news">log-reactivate-news</key>
+</i18n>

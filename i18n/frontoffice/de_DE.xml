@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.frontoffice" lcid="de_DE">
+  <key id="news">Aktualitäten</key>
+  <key id="detail-datetimeinfo">Datum und Uhrzeit</key>
+  <key id="detail-place">Ort</key>
+  <key id="detail-accessmap">Zugangsplan</key>
+  <key id="detail-contact">Kontakt</key>
+  <key id="detail-attachment">Anhang</key>
+  <key id="detail-backlink">Zurück zur Aktualitätenliste</key>
+  <key id="list-link">alle Aktualitäten anzeigen</key>
+  <key id="archive-link">Archive anzeigen</key>
+  <key id="list-detail-links">Details anzeigen</key>
+  <key id="list-archives">Archive</key>
+  <key id="rss-link">RSS-Feed</key>
+  <key id="error-no-preferences">Bitte erst die Einstellungen des Aktualitätenmoduls einstellen!</key>
+  <key id="default-feed-description">{label}-RSS-Feed</key>
+  <key id="news-not-found">die Aktualität, die Sie ansehen möchten, exisitiert nicht (mehr) ({id})!</key>
+  <key id="empty-archive-list">Kein Archiv verfügbar.</key>
+  <key id="all-news">alle Aktualitäten anzeigen</key>
+  <key id="news-in-the-same-topic">die Aktualitäten der Rubrik anzeigen</key>
+</i18n>

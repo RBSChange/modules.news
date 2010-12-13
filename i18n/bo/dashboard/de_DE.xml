@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.dashboard" lcid="de_DE">
+  <key id="news-validation">freizugebende Aktualitäten</key>
+  <key id="task-label-validate">{author} bittet Sie um Veröffentlichung der Aktualität:</key>
+  <key id="no-news-to-validate">Es gibt keine zu veröffentliche Aktualität</key>
+</i18n>

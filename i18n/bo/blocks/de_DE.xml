@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.blocks" lcid="de_DE">
+  <key id="news">Aktualitätsdetail</key>
+  <key id="news-list">komplette Aktualitätsliste</key>
+  <key id="contextual-news-list">Aktualitätsliste der Rubrik</key>
+</i18n>

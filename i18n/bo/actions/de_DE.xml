@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.actions" lcid="de_DE">
+  <key id="create-news">neue Aktualität erstellen</key>
+  <key id="create_">neu...</key>
+  <key id="previewnews">Aktualitätsvorschau</key>
+</i18n>

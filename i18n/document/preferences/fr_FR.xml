@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.document.preferences" lcid="fr_FR">
+  <key id="document-name">préférences</key>
+  <key id="edition-form-title">préférences du module actualités</key>
+  <key id="display-spaced"> Propriétés d'affichage</key>
+  <key id="itemperpage">nombre d'actualités par page</key>
+  <key id="itemperpage-help">lorsque plusieurs pages sont nécéssaires pour afficher une liste d'actualité, la valeur de ce champ détermine le nombre d'actualités affichées par page.</key>
+  <key id="listvisualposition">position des visuels</key>
+  <key id="listvisualposition-help">lorsque une liste d'actualités s'affiche, la valeur de ce champ détermine la position des images des actualités.</key>
+  <key id="homepagetemplate">habillage page d'accueil</key>
+  <key id="homepagetemplate-help">choix de l'habillage pour l'affichage page d'accueil des listes d'actualités.</key>
+  <key id="onecol">une colonne</key>
+  <key id="twocol">deux colonnes</key>
+  <key id="leftfirst">première actualité à gauche</key>
+  <key id="left-visual">à gauche</key>
+  <key id="right-visual">à droite</key>
+  <key id="alternate-visual">alterné</key>
+  <key id="rss-spaced"> Flux RSS</key>
+  <key id="rssfeedtitle">titre du flux RSS</key>
+  <key id="rssfeedtitle-help">ce champ détermine le titre du flux RSS d'une liste d'actualités.</key>
+  <key id="rssfeedurl">addresse associée au flux RSS</key>
+  <key id="rssfeedurl-help">ce champ détermine l'addresse associée au flux RSS d'une liste d'actualités.</key>
+  <key id="rssfeeddescription">description du flux RSS</key>
+  <key id="rssfeeddescription-help">ce champ détermine la description du flux RSS d'une liste d'actualités.</key>
+  <key id="rssitemcount">nombre d'éléments du flux RSS</key>
+  <key id="rssitemcount-help">ce champ détermine le nombre d'élèments maximum affiché par le flux RSS du module actualités.</key>
+  <key id="referencing-spaced"> Référencement</key>
+  <key id="detailtitle">titre de la page de détail</key>
+  <key id="detailtitle-help">ce champ défini la valeur de la balise meta 'title' de la page de détail d'une actualité. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement
+			remplacé par le titre, le résumé et la date de l'actualité en question.</key>
+  <key id="detaildescription">description de la page de détail</key>
+  <key id="detaildescription-help">ce champ défini la valeur de la balise meta 'description' de la page de détail d'une actualité. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement
+			remplacé par le titre, le résumé et la date de l'actualité en question.</key>
+  <key id="detailkeywords">mots-clefs de la page de détail</key>
+  <key id="detailkeywords-help">ce champ défini la valeur de la balise meta 'keywords' de la page de détail d'une actualité et doit contenir des mots séparés par des virgules. Si le champ contient les mots
+			TITRE, RESUME ou DATE, ceci seront respectivement remplacé par le titre, le résumé et la date de l'actualité en question.</key>
+  <key id="previewpage">page de prévisualisation</key>
+  <key id="previewpage-help">glissez-déposez une page du site contenant un bloc 'Détail des actualités' pour pouvoir utiliser la fonction de prévisualisation d'une actualité.</key>
+  <key id="display">affichage</key>
+  <key id="referencing">référencement</key>
+  <key id="rss">flux RSS</key>
+</i18n>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.news.bo.general" lcid="en_GB">
+  <key id="module-name">news</key>
+  <key id="tree-root-name">news</key>
+  <key id="system-folder-name">news</key>
+  <key id="classic-display">classic display</key>
+  <key id="homepage-display">homepage display</key>
+  <key id="archive-display">archive display</key>
+  <key id="achrono-display">from most recent to oldest</key>
+  <key id="chrono-display">from oldest to most recent</key>
+  <key id="nopreviewpage">no preview page defined</key>
+  <key id="nopreviewpagetext">please fill-in the field 'preview page' the news module's preferences.</key>
+  <key id="position-both">top and bottom</key>
+  <key id="position-top">top</key>
+  <key id="position-bottom">bottom</key>
+</i18n>
