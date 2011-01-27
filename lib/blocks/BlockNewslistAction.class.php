@@ -93,9 +93,8 @@ class news_BlockNewsListAction extends website_BlockAction
 		$visual = $configuration->getVisual();
 		$includechildren = $configuration->getIncludechildren();
 		$timeordered = f_util_Convert::toBoolean($configuration->getTimeordered());		
-		$displayType = $configuration->getType();
+		$displayType = $configuration->getDisplayType();
 		$displayRssLink = $configuration->getDisplayrsslink();
-
 
 		// Get the 'news' source (either dropped folder, parent topic, parent website)...
 		if ($displayType == news_NewsService::ARCHIVE_DISPLAY)

@@ -4,8 +4,8 @@
   <key id="visual-help">display pictures</key>
   <key id="itemcount">number of news</key>
   <key id="itemcount-help">to view all news, type -1</key>
-  <key id="type">display type</key>
-  <key id="type-help">display type</key>
+  <key id="displaytype">display type</key>
+  <key id="displaytype-help">display type</key>
   <key id="timeordered">display ordering</key>
   <key id="timeordered-help">display ordering</key>
   <key id="includechildren">include sub-folders/topics</key>

@@ -22,7 +22,7 @@
 			<parameter name="itemcount" type="Integer" default-value="-1" />
 			<parameter name="includechildren" type="Boolean" default-value="true" />
 			<parameter name="visual" type="Boolean" default-value="true" />
-			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="displayType" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
 			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
 			<parameter name="displayrsslink" type="Boolean" default-value="true" />
 		</parameters>
@@ -33,7 +33,7 @@
 			<parameter name="itemcount" type="Integer" default-value="-1" />
 			<parameter name="includechildren" type="Boolean" default-value="true" />
 			<parameter name="visual" type="Boolean" default-value="true" />
-			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="displayType" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
 			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
 			<parameter name="displayrsslink" type="Boolean" default-value="true" />
 		</parameters>
@@ -44,7 +44,7 @@
 			<parameter name="itemcount" type="Integer" default-value="-1" />
 			<parameter name="includechildren" type="Boolean" default-value="true" />
 			<parameter name="visual" type="Boolean" default-value="true" />
-			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="displayType" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
 			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
 			<parameter name="displayrsslink" type="Boolean" default-value="true" />
 		</parameters>
@@ -55,7 +55,7 @@
 			<parameter name="itemcount" type="Integer" default-value="-1" />
 			<parameter name="includechildren" type="Boolean" default-value="true" />
 			<parameter name="visual" type="Boolean" default-value="true" />
-			<parameter name="type" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
+			<parameter name="displayType" type="String" list-id="modules_news/blockdisplaylisttype" default-value="classic" />
 			<parameter name="timeordered" type="String" list-id="modules_news/blockdisplaytimeordered" default-value="false" />
 			<parameter name="displayrsslink" type="Boolean" default-value="true" />
 		</parameters>

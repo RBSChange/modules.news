@@ -4,8 +4,8 @@
   <key id="visual-help">afficher les visuels</key>
   <key id="itemcount">nombre d'actualités</key>
   <key id="itemcount-help">pour afficher toutes les actualités, saisir -1</key>
-  <key id="type">type d'affichage</key>
-  <key id="type-help">type d'affichage pour le rendu</key>
+  <key id="displaytype">type d'affichage</key>
+  <key id="displaytype-help">type d'affichage pour le rendu</key>
   <key id="timeordered">ordre d'affichage</key>
   <key id="timeordered-help">ordre d'affichage</key>
   <key id="includechildren">inclure les sous-dossiers/rubriques</key>
