@@ -20,12 +20,12 @@
     <locale lang="en">to view all news, type -1</locale>
     <locale lang="de">um alle Aktualitäten anzuzeigen, erfassen Sie -1</locale>
   </entity>
-  <entity id="type">
+  <entity id="displayType">
     <locale lang="fr">type d'affichage</locale>
     <locale lang="en">display type</locale>
     <locale lang="de">Anzeigeart</locale>
   </entity>
-  <entity id="type-help">
+  <entity id="displayType-help">
     <locale lang="fr">type d'affichage pour le rendu</locale>
     <locale lang="en">display type</locale>
     <locale lang="de">Anzeigeart für das Ergebnis</locale>
