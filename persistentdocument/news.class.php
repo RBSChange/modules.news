@@ -13,7 +13,6 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 
 	/**
 	 * Get the indexable document
-	 *
 	 * @return indexer_IndexedDocument
 	 */
 	public function getIndexedDocument()
@@ -93,52 +92,6 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 	}
 	
 	/**
-	 * @return String
-	 * @deprecated 
-	 */
-	public function getDetailmetatitle()
-	{
-		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
-		if (!is_null($prefs))
-		{
-			$metaTitle = $this->replaceMeta($prefs->getDetailtitle());
-		}
-		if (f_util_StringUtils::isEmpty($metaTitle))
-		{
-			return $this->getLabel();
-		}
-		return $metaTitle;
-	}
-
-	/**
-	 * @return String
-	 * @deprecated 
-	 */
-	public function getDetaildescription()
-	{
-		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
-		if (!is_null($prefs))
-		{
-			return $this->replaceMeta($prefs->getDetaildescription());
-		}
-		return null;
-	}
-
-	/**
-	 * @return String
-	 * @deprecated 
-	 */
-	public function getDetailkeywords()
-	{
-		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
-		if (!is_null($prefs))
-		{
-			return $this->replaceMeta($prefs->getDetailkeywords());
-		}
-		return null;
-	}
-	
-	/**
 	 * @return Boolean
 	 */
 	public function hasLinkedPage()
@@ -168,56 +121,6 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 	public function getDateDay()
 	{
 		return sprintf("%02d", date_Calendar::getInstance($this->getDate())->getDay());
-	}
-	
-	/**
-	 * @param String $target
-	 * @return String
-	 * @deprecated
-	 */
-	private function replaceMeta($target)
-	{
-		$format = f_Locale::translate('&framework.date.date.smart-full-short;');
-		
-		$title = $this->getLabel();
-		$summary = $this->getSummaryAsHtml();
-		$date = date_Calendar::getInstance($this->getDate());
-		$string = str_replace(array('TITLE', 'TITRE'), $title, $target);
-		$string = str_replace(array('RESUME', 'SUMMARY'), $summary, $string);
-		$string = str_replace('DATE', date_DateFormat::format($date, $format), $string);
-		return $string;
-	}
-	
-	/**
-	 * @param string $moduleName
-	 * @param string $treeType
-	 * @param array<string, string> $nodeAttributes
-	 */	
-	protected function addTreeAttributes($moduleName, $treeType, &$nodeAttributes)
-	{
-
-		if ($this->isPublished())
-		{
-    		if ($this->getArchivevisibility())
-    		{
-    			$nodeAttributes['newsStatus'] = 'archive';
-    			$nodeAttributes['specialvisibility'] = f_Locale::translate('&modules.news.document.news.ArchivePage;');
-    		}
-    		else if ($this->getHomepagevisibility() == true)
-    		{
-    			$nodeAttributes['newsStatus'] = 'homepage';
-    			$nodeAttributes['specialvisibility'] = f_Locale::translate('&modules.news.document.news.HomePage;');
-    		} 
-		}
-		
-		$user = users_UserService::getInstance()->getUserByLogin($this->getAuthor());
-		if($user !== null)
-		{
-			$nodeAttributes['author'] = $user->getFullname();
-		}
-		
-		$nodeAttributes['startpub'] = date_DateFormat::format($this->getUIStartpublicationdate(), 'D d M Y H:i', RequestContext::getInstance()->getUILang()); 
-		$nodeAttributes['endpub'] = date_DateFormat::format($this->getUIEndpublicationdate(), 'D d M Y H:i', RequestContext::getInstance()->getUILang()); 
 	}
 	
 	/**
@@ -276,5 +179,66 @@ class news_persistentdocument_news extends news_persistentdocument_newsbase impl
 	public function getRSSDate()
 	{
 		return $this->getDate();
-	}	
+	}
+	
+	// Deprecated.
+	
+	/**
+	 * @deprecated (will be removed in 4.0)
+	 */
+	public function getDetailmetatitle()
+	{
+		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
+		if (!is_null($prefs))
+		{
+			$metaTitle = $this->replaceMeta($prefs->getDetailtitle());
+		}
+		if (f_util_StringUtils::isEmpty($metaTitle))
+		{
+			return $this->getLabel();
+		}
+		return $metaTitle;
+	}
+
+	/**
+	 * @deprecated (will be removed in 4.0)
+	 */
+	public function getDetaildescription()
+	{
+		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
+		if (!is_null($prefs))
+		{
+			return $this->replaceMeta($prefs->getDetaildescription());
+		}
+		return null;
+	}
+
+	/**
+	 * @deprecated (will be removed in 4.0)
+	 */
+	public function getDetailkeywords()
+	{
+		$prefs = ModuleService::getInstance()->getPreferencesDocument('news');
+		if (!is_null($prefs))
+		{
+			return $this->replaceMeta($prefs->getDetailkeywords());
+		}
+		return null;
+	}
+
+	/**
+	 * @deprecated (will be removed in 4.0)
+	 */
+	private function replaceMeta($target)
+	{
+		$format = f_Locale::translate('&framework.date.date.smart-full-short;');
+		
+		$title = $this->getLabel();
+		$summary = $this->getSummaryAsHtml();
+		$date = date_Calendar::getInstance($this->getDate());
+		$string = str_replace(array('TITLE', 'TITRE'), $title, $target);
+		$string = str_replace(array('RESUME', 'SUMMARY'), $summary, $string);
+		$string = str_replace('DATE', date_DateFormat::format($date, $format), $string);
+		return $string;
+	}
 }

@@ -473,6 +473,39 @@ class news_NewsService extends f_persistentdocument_DocumentService
 		$data['properties']['endarchivedate'] = $document->getEndarchivedate();
 		return $data;
 	}
+
+	/**
+	 * @param news_persistentdocument_news $document
+	 * @param string $moduleName
+	 * @param string $treeType
+	 * @param array<string, string> $nodeAttributes
+	 */	
+	public function addTreeAttributes($document, $moduleName, $treeType, &$nodeAttributes)
+	{
+		if ($document->isPublished())
+		{
+    		if ($document->getArchivevisibility())
+    		{
+    			$nodeAttributes['newsStatus'] = 'archive';
+    			$nodeAttributes['specialvisibility'] = LocaleService::getInstance()->transBO('m.news.document.news.archivepage', array('ucf'));
+    		}
+    		else if ($document->getHomepagevisibility() == true)
+    		{
+    			$nodeAttributes['newsStatus'] = 'homepage';
+    			$nodeAttributes['specialvisibility'] = LocaleService::getInstance()->transBO('m.news.document.news.homepage', array('ucf'));
+    		} 
+		}
+		
+		$user = users_UserService::getInstance()->getUserByLogin($document->getAuthor());
+		if($user !== null)
+		{
+			$nodeAttributes['author'] = $user->getFullname();
+		}
+		
+		$lang = RequestContext::getInstance()->getUILang();
+		$nodeAttributes['startpub'] = date_DateFormat::format($document->getUIStartpublicationdate(), 'D d M Y H:i', $lang); 
+		$nodeAttributes['endpub'] = date_DateFormat::format($document->getUIEndpublicationdate(), 'D d M Y H:i', $lang); 
+	}
 	
 	// Tweets handling.
 	
