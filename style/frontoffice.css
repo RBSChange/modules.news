@@ -1,32 +1,32 @@
-.news-fifty-left{
+.modules-news .news-fifty-left{
 	float: left;
 	width: 48%;
 	margin-right: 10px;
 	margin-bottom: 12px;
 }
-.news-fifty-right{
+.modules-news .news-fifty-right{
 	float: right;
 	width: 48%;
 	margin-left: 10px;
 	margin-bottom: 12px;
 }
-ul.news li{
+.modules-news ul.news li{
 	display: inline;
 }
-ol.news li{
+.modules-news ol.news li{
 	width: 100%;
 	padding: 10px 0;
 	clear: left;
 	display: table;
 	margin-bottom: 12px;
 }
-ul.detail{
+.modules-news ul.detail{
 	margin: 40px 0;
 }
-ul.detail li{
+.modules-news ul.detail li{
 	clear: both;
 }
-ul.detail li strong{
+.modules-news ul.detail li strong{
 	width: 33%;
 	display: block;
 	float: left;
@@ -34,23 +34,35 @@ ul.detail li strong{
 	padding: 2px 0;
 	padding-right: 15px;
 }
-.information{
+
+.modules-news .information{
 	padding: 2px 0;
 	padding-left: 15px;
 	float: left;
 	width: 56%;
 	border-left: 1px solid #000000;
 }
-.modules-news-newsContextualList ol li,.modules-news-newsList ol li{
+
+.modules-news ul.mini-navigation{
+	list-style-type: none;
+}
+
+
+.modules-news-newsContextualList ol li,
+.modules-news-newsList ol li{
 	margin-bottom: 12px;
 }
-.modules-news-newsContextualList ul.navigation li,.modules-news-newsList ul.navigation li{
+
+.modules-news-newsContextualList ul.navigation li,
+.modules-news-newsList ul.navigation li{
 	width: 50%;
 }
-.modules-news-newsContextualList li.last,.modules-news-newsList li.last{
+.modules-news-newsContextualList li.last,
+.modules-news-newsList li.last{
 	float: none;
 }
-.modules-news-newsContextualList h2.title,.modules-news-newsList h2.title{
+.modules-news-newsContextualList h2.title,
+.modules-news-newsList h2.title{
 	margin-top: 12px;
 }
 
