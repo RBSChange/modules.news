@@ -5,9 +5,9 @@
 			<template>/news/$dateYear/$dateMonth/$dateDay/$newsLabel-$lang,$id</template>
 			<parameters>
 				<parameter name="newsLabel"  method="getLabel" />
-				<parameter name="dateYear" format="[0-9]+" method="getDateYear" />
-				<parameter name="dateMonth" format="[0-9]+"  method="getDateMonth" />
-				<parameter name="dateDay" format="[0-9]+"  method="getDateDay" />
+				<parameter name="dateYear" method="getDateYear" />
+				<parameter name="dateMonth" method="getDateMonth" />
+				<parameter name="dateDay" method="getDateDay" />
 			</parameters>
 		</rule>
 
@@ -15,25 +15,25 @@
 			<template>/actualites/$dateYear/$dateMonth/$dateDay/$newsLabel-$lang,$id</template>
 			<parameters>
 				<parameter name="newsLabel"  method="getLabel" />
-				<parameter name="dateYear" format="[0-9]+" method="getDateYear" />
-				<parameter name="dateMonth" format="[0-9]+"  method="getDateMonth" />
-				<parameter name="dateDay" format="[0-9]+"  method="getDateDay" />
+				<parameter name="dateYear" method="getDateYear" />
+				<parameter name="dateMonth" method="getDateMonth" />
+				<parameter name="dateDay" method="getDateDay" />
 			</parameters>
 		</rule>
 
 		<rule redirection="news/ViewFeed">
 			<template>/news/rss/feed-$lang,$parentref,$cmpref.xml</template>
 			<parameters>
-				<parameter name="parentref" format="[0-9]+" />
-				<parameter name="cmpref" format="[0-9]+"  />
+				<parameter name="parentref" />
+				<parameter name="cmpref" />
 			</parameters>
 		</rule>
 
 		<rule redirection="news/ViewFeed" lang="fr">
 			<template>/actualites/rss/flux-$lang,$parentref,$cmpref.xml</template>
 			<parameters>
-				<parameter name="parentref" format="[0-9]+" />
-				<parameter name="cmpref" format="[0-9]+"  />
+				<parameter name="parentref" />
+				<parameter name="cmpref" />
 			</parameters>
 		</rule>
 
