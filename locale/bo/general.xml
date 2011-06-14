@@ -68,15 +68,20 @@
 	<entity id="column.specialvisibility">
 		<locale lang="fr">Type d'affichage</locale>
 		<locale lang="en">Display type</locale>
+		<locale lang="de">Special Anzeige</locale>
 	</entity>
-	<entity id="column.startpub">
+	<entity id="column.startpublicationdate">
 		<locale lang="fr">date de début de parution</locale>
 		<locale lang="en">publication start date</locale>
 		<locale lang="de">Anfangsdatum der Veröffentlichung</locale>
 	</entity>
-	<entity id="column.endpub">
+	<entity id="column.endpublicationdate">
 		<locale lang="fr">date de fin de parution</locale>
 		<locale lang="en">publication end date</locale>
 		<locale lang="de">Enddatum der Veröffentlichung</locale>
+	</entity>
+	<entity id="column.pathof">
+		<locale lang="fr">Chemin</locale>
+		<locale lang="en">Path</locale>
 	</entity>
 </localization>
