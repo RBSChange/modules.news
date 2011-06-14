@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <i18n baseKey="m.news.bo.general.column" lcid="de_DE">
-  <key id="startpub">Anfangsdatum der Veröffentlichung</key>
-  <key id="endpub">Enddatum der Veröffentlichung</key>
+  <key id="startpublicationdate">Anfangsdatum der Veröffentlichung</key>
+  <key id="endpublicationdate">Enddatum der Veröffentlichung</key>
 </i18n>

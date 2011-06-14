@@ -38,7 +38,7 @@
 			<columns>
 				<column name="specialvisibility" label="Specialvisibility" flex="2"/>
 				<column name="startpub" label="Startpublicationdate" flex="1"/>
-				<column name="endpub" label="Startpublicationdate" flex="1"/>
+				<column name="endpub" label="Endpublicationdate" flex="1"/>
 			</columns>
 			<styles properties="newsStatus" />
 			<drops>
@@ -60,7 +60,7 @@
 			<columns>
 				<column name="specialvisibility" label="Specialvisibility" flex="2"/>
 				<column name="startpub" label="Startpublicationdate" flex="1"/>
-				<column name="endpub" label="Startpublicationdate" flex="1"/>
+				<column name="endpub" label="Endpublicationdate" flex="1"/>
 			</columns>
 			<styles properties="newsStatus" />
 			<drops>
