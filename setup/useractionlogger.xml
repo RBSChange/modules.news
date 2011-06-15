@@ -9,4 +9,5 @@
   <actiondef modulename="news" actionname="activate.news" label="modules.news.bo.useractionlogger.activate-news"/>
   <actiondef modulename="news" actionname="deactivated.news" label="modules.news.bo.useractionlogger.deactivated-news"/>
   <actiondef modulename="news" actionname="reactivate.news" label="modules.news.bo.useractionlogger.reactivate-news"/>
+  <actiondef modulename="news" actionname="updatetranslation.news" label="m.news.bo.useractionlogger.updatetranslation-news"/>
 </script>

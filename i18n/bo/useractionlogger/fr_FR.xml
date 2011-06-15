@@ -16,4 +16,6 @@
   <key id="log-deactivated-news">log-deactivated-news</key>
   <key id="reactivate-news">reactivate.news {lang} {documentlabel}</key>
   <key id="log-reactivate-news">log-reactivate-news</key>
+  <key id="updatetranslation-news">updatetranslation.news {lang} {documentlabel}</key>
+  <key id="log-updatetranslation-news">log updatetranslation news</key>
 </i18n>
